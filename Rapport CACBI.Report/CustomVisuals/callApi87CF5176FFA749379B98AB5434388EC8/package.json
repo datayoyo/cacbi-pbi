@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "author": {
+    "name": "Med Amine Jebabli",
+    "email": "ajebabli@yellowsys.fr"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/callApi87CF5176FFA749379B98AB5434388EC8.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "callApi87CF5176FFA749379B98AB5434388EC8",
+    "name": "callApi",
+    "displayName": "CallApi",
+    "version": "1.0.0",
+    "description": "Send comment viz",
+    "supportUrl": "https://yellowsys.fr/",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

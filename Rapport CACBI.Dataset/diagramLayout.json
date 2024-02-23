@@ -1,0 +1,394 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 797,
+        "y": 517
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1638.4830464145784,
+            "y": 374.53789496608925
+          },
+          "nodeIndex": "Accounts",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 373.9,
+            "y": 74
+          },
+          "nodeIndex": "Choix du test",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 747.8,
+            "y": 86
+          },
+          "nodeIndex": "Choix du test 1",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1121.7,
+            "y": 86
+          },
+          "nodeIndex": "Choix du test_frs",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 172.72058703628977,
+            "y": 1177.3936479663776
+          },
+          "nodeIndex": "Compte",
+          "size": {
+            "height": 657.26247107152631,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 163.9742337483242,
+            "y": 805.99976543635273
+          },
+          "nodeIndex": "DimTemps",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2243.5,
+            "y": 74
+          },
+          "nodeIndex": "FieldParam_measures",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2617.4,
+            "y": 74
+          },
+          "nodeIndex": "FieldParam_measures achats",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2991.3,
+            "y": 74
+          },
+          "nodeIndex": "FieldParam_measures immos",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3365.2,
+            "y": 74
+          },
+          "nodeIndex": "FieldParam_measures_fluxcumul",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3739.2,
+            "y": 98
+          },
+          "nodeIndex": "Formes juridiques",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 807.686820533746,
+            "y": 1021.7471773965884
+          },
+          "nodeIndex": "KPI",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1149.0211734454078,
+            "y": 1018.1916479036605
+          },
+          "nodeIndex": "MappingPCG",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1551.4161146477036,
+            "y": 118.35352943021093
+          },
+          "nodeIndex": "Mesures",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1037.2972899746258,
+            "y": 672.39376524820136
+          },
+          "nodeIndex": "ParamAN",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1333.9538781398242,
+            "y": 680.74729467841223
+          },
+          "nodeIndex": "ParamDC",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1630.5104663050224,
+            "y": 687.94929474112928
+          },
+          "nodeIndex": "Parametrage",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2065.471054595655,
+            "y": 667.59576531091841
+          },
+          "nodeIndex": "PlanCompteAEF",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7104.4,
+            "y": 98
+          },
+          "nodeIndex": "SliderT1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7478.3,
+            "y": 98
+          },
+          "nodeIndex": "SliderT2",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7852.2,
+            "y": 98
+          },
+          "nodeIndex": "SliderT3",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8226.2,
+            "y": 98
+          },
+          "nodeIndex": "SliderT4",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8600.1,
+            "y": 98
+          },
+          "nodeIndex": "SliderT5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8974,
+            "y": 98
+          },
+          "nodeIndex": "SliderT6",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9347.9,
+            "y": 98
+          },
+          "nodeIndex": "SliderT7",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9721.8,
+            "y": 98
+          },
+          "nodeIndex": "SliderT8",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10095.7,
+            "y": 98
+          },
+          "nodeIndex": "SliderT9",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10471.1,
+            "y": 0
+          },
+          "nodeIndex": "FieldParam_measures_fluxcumul inv",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10846.6,
+            "y": 0
+          },
+          "nodeIndex": "FieldParam_table",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11222,
+            "y": 0
+          },
+          "nodeIndex": "FieldParam2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11597.4,
+            "y": 0
+          },
+          "nodeIndex": "Parameter",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 77.0978907486828,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}
