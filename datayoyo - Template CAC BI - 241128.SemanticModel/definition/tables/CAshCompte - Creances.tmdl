@@ -1,0 +1,78 @@
+table 'CAshCompte - Creances'
+	lineageTag: 6ecedd85-ce97-470e-98d8-90d6e08c009c
+
+	column CAsh
+		dataType: string
+		lineageTag: 9af94a47-59ec-4852-8547-cceb162be836
+		summarizeBy: none
+		sourceColumn: CAsh
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed 2'
+		dataType: int64
+		formatString: 0
+		lineageTag: ec4cf26f-3a32-4a3e-bb2c-4fe29b1c54a2
+		summarizeBy: none
+		sourceColumn: CAsh detailed 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh agreg'
+		dataType: string
+		lineageTag: 5f74b963-c982-4e95-91bf-2d782a0fd357
+		summarizeBy: none
+		sourceColumn: CAsh agreg
+
+		annotation SummarizationSetBy = Automatic
+
+	column Icone
+		dataType: string
+		lineageTag: 528ab7e6-bc7a-4d36-855a-dad0f34d2fa0
+		summarizeBy: none
+		sourceColumn: Icone
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash detailed'
+		dataType: string
+		lineageTag: c7dabe26-0711-4b03-a4b6-b4ab8b0aabbe
+		summarizeBy: none
+		sourceColumn: Cash detailed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Icone - CAsh detailed'
+		dataType: string
+		lineageTag: ece33053-4028-4bfb-9712-1da7311359ca
+		summarizeBy: none
+		sourceColumn: Icone - CAsh detailed
+		sortByColumn: 'CAsh detailed rank1'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed rank1'
+		dataType: int64
+		formatString: 0
+		lineageTag: 01af9823-eeb9-4dd8-b72c-a191f43b2643
+		summarizeBy: sum
+		sourceColumn: CAsh detailed rank1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CAshCompte - Creances' = m
+		mode: import
+		queryGroup: CAsh
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("tZTNboJAEMdfZcOpTWxlUYoeNwTaQz8Mflyshw3uxk0UGz76NE3sTUn6FrxJn8BH6CyICtHaGrksLMP8Znb2PzMcKia5DSZKTTFUWEwCy3qxiOX7RHDuMzR+jVRVMyjnVPgs2PyAjpuxMqrtuM2mbsCjN5Do768PWEkUbkFLlO3QlXYNX9rtgrOe5tR9yIPWETxWsLM8l4ogYDPmhUHRigo2xELECh/c+eyNeUESS79GMVecFsGxyLNpdTOsjGb6SUw9F7J0p2IXcYUOGfQSEl8eqV0e2YLVJtaO9vdLauK29CZnerekPDq58v4dWpaXDEqlIO/ZeeHyqbzvkG2LccCUs8u6bW2Eixzrvv94Xn4NKVbbtnp72VmcMxBi8ommWfOwkpqhTeppsgPqCxqKuYfGMuVTfrjUenfyAObLUweBWvaEsjm28ELmz5J4LPY6G+Ry1AzCK/ANXDFfq5jfqJavV1wfXa+4PhXzVTXn2063yIcJnQmfzyPfkyKP/G3L/fYDLo10FVcWg+Zz4CYdQv2ek8+g5ekpMfoB", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [CAsh = _t, #"CAsh detailed 2" = _t, #"CAsh agreg" = _t, Icone = _t, #"Cash detailed" = _t, #"Icone - CAsh detailed" = _t, #"CAsh detailed rank1" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CAsh", type text}, {"CAsh detailed 2", Int64.Type}, {"CAsh agreg", type text}, {"Icone", type text}, {"Cash detailed", type text}, {"Icone - CAsh detailed", type text}, {"CAsh detailed rank1", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

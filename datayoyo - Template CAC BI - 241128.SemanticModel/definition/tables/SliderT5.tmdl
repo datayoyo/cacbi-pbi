@@ -1,0 +1,30 @@
+table SliderT5
+	lineageTag: df3f64b6-8f1f-4030-8bec-703ba55a7a45
+
+	column Code
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 82e73f8b-bd92-41fc-b4bb-61e5d37b64df
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SliderT5-68bf3184-811c-4b06-9f85-eb399b02cde8 = m
+		mode: import
+		queryGroup: Sliders
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    SliderT6 = public{[Name="SliderT5"]}[Data]
+				in
+				    SliderT6
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

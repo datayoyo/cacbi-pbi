@@ -1,0 +1,50 @@
+table 'Parameter 3'
+	lineageTag: 99237d1c-f28f-4077-92b2-f66c66b4a4cf
+
+	column Parameter
+		lineageTag: 5f807f9b-a27a-4d9f-94cf-382bcd51e030
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		lineageTag: e6f3b4ad-5a5b-4a0d-9c55-3df83f148a33
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		formatString: 0
+		lineageTag: d5c039a4-1393-450e-a485-dd47cab3ad93
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Parameter 3' = calculated
+		mode: import
+		source =
+				{
+				    ("CategorieVA", NAMEOF('PlanCompteAEF'[CategorieVA]), 0),
+				    ("CategorieSIG", NAMEOF('PlanCompteAEF'[CategorieSIG]), 1),
+				    ("CategorieREX", NAMEOF('PlanCompteAEF'[CategorieREX]), 2),
+				    ("CategorieResultatCourant", NAMEOF('PlanCompteAEF'[CategorieResultatCourant]), 3),
+				    ("CategorieMarge", NAMEOF('PlanCompteAEF'[CategorieMarge]), 4),
+				    ("Categorie EBE", NAMEOF('PlanCompteAEF'[Categorie EBE]), 5)
+				}
+
+	annotation PBI_Id = 6b2876b4dac5427cab96fea5f268afe7
+

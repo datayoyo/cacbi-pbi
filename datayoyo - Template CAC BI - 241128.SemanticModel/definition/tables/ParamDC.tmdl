@@ -1,0 +1,65 @@
+table ParamDC
+	lineageTag: 1830a046-b7ab-433d-91e1-e60291dbefb1
+
+	column D/C
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: 47c9aeb5-6f28-4596-a690-fcceb359c7e5
+		summarizeBy: none
+		sourceColumn: D/C
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D/C - détaillé'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3c33955c-6dd5-45c0-b0e3-0c676b86e728
+		summarizeBy: none
+		sourceColumn: D/C - détaillé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D/C TVAmot.'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: 1fe50db2-16b8-46c0-b7e0-c7a69a8f8769
+		summarizeBy: none
+		sourceColumn: D/C TVAmot.
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D/C TVI'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: c1d61512-391b-4814-b332-fa6f70e9649a
+		summarizeBy: none
+		sourceColumn: D/C TVI
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ParamDC-2f5db1bd-5d30-43b1-9fa4-2f40c1aa0184 = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    ParamDC1 = public{[Name="ParamDC"]}[Data]
+				in
+				    ParamDC1
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

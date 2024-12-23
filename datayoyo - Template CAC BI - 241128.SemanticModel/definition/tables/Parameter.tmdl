@@ -1,0 +1,46 @@
+table Parameter
+	lineageTag: 66bd74e9-a202-40c6-9e93-4bd19c959fe4
+
+	column Parameter
+		lineageTag: ea971fe8-fd2a-400e-96d9-ccef2546b0af
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		lineageTag: 2081cfda-80df-4d8e-97da-770ebcdecba1
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		formatString: 0
+		lineageTag: 1f72bdf6-0b1c-4519-a4b1-97dba7384bc6
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parameter-9c41ea99-8849-4ad2-89b1-f414a816efbb = calculated
+		mode: import
+		source =
+				{
+				    ("MonthName", NAMEOF('DimTemps'[MonthName]), 0),
+				    ("QuarterName", NAMEOF('DimTemps'[QuarterName]), 1)
+				}
+
+	annotation PBI_Id = 255416b680764cc48efa52eb38faa937
+

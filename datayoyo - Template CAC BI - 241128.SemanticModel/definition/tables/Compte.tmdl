@@ -1,0 +1,399 @@
+table Compte
+	lineageTag: f53278cc-1d29-45a3-a646-e35c04229459
+
+	column Racine1
+		dataType: int64
+		formatString: 0
+		lineageTag: 41d04a49-7ca8-466a-a92f-473d59662ee6
+		summarizeBy: sum
+		sourceColumn: Racine1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine2
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e28ccd5-4f22-48b0-a598-733fb1df1143
+		summarizeBy: sum
+		sourceColumn: Racine2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine3
+		dataType: int64
+		formatString: 0
+		lineageTag: be3bc4e9-cb42-4250-abd0-c88248f91224
+		summarizeBy: sum
+		sourceColumn: Racine3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine4
+		dataType: int64
+		formatString: 0
+		lineageTag: 9add4f70-2943-435e-9e76-b372717fc3d2
+		summarizeBy: sum
+		sourceColumn: Racine4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine5
+		dataType: int64
+		formatString: 0
+		lineageTag: 90f0cc76-817e-46c0-94ca-e30f36b5b6c0
+		summarizeBy: none
+		sourceColumn: Racine5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine6
+		dataType: int64
+		formatString: 0
+		lineageTag: c1924809-09d5-4929-9e11-40c150095e00
+		summarizeBy: none
+		sourceColumn: Racine6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine3Libelle
+		dataType: string
+		lineageTag: 04c797dc-935f-47ea-8571-7971aed1a87e
+		summarizeBy: none
+		sourceColumn: Racine3Libelle
+		sortByColumn: Rankingracine3lib
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie
+		dataType: string
+		lineageTag: a760dd85-2dfa-4478-b031-3147c1ae06cb
+		summarizeBy: none
+		sourceColumn: Categorie
+		sortByColumn: RankingCategorie
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie2
+		dataType: string
+		lineageTag: 05ceb577-d106-4e87-91b9-ce1a81607bd3
+		summarizeBy: none
+		sourceColumn: Categorie2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Autresdettescreances
+		dataType: string
+		lineageTag: 834ec938-5428-4a24-8fb0-2f274804cd85
+		summarizeBy: none
+		sourceColumn: Autresdettescreances
+		sortByColumn: RankingAutredettescreances
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rankingracine3lib
+		dataType: double
+		lineageTag: 19f52f58-9ea0-4861-9ecf-60be8bc1cb64
+		summarizeBy: sum
+		sourceColumn: Rankingracine3lib
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RankingCategorie
+		dataType: double
+		lineageTag: 7d93b059-91f3-494b-bf08-59191676cfdb
+		summarizeBy: sum
+		sourceColumn: RankingCategorie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RankingAutredettescreances
+		dataType: double
+		lineageTag: 33770c44-4f97-4977-8779-758dc975342f
+		summarizeBy: sum
+		sourceColumn: RankingAutredettescreances
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TFTNIV1
+		dataType: string
+		lineageTag: 9ff70384-610b-41af-b123-3243d19f7d18
+		summarizeBy: none
+		sourceColumn: TFTNIV1
+		sortByColumn: 'TFTNIV1 - RANKING'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TFTNIV1 - RANKING'
+		dataType: int64
+		formatString: 0
+		lineageTag: 42008c49-c3cb-47bd-858f-9bc62ad4987d
+		summarizeBy: sum
+		sourceColumn: TFTNIV1 - RANKING
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TFTNIV2 - RANKING'
+		dataType: int64
+		formatString: 0
+		lineageTag: 901947f4-7255-4218-9841-e60d3b2eacac
+		summarizeBy: sum
+		sourceColumn: TFTNIV2 - RANKING
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TFTNIV3 - RANKING'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9da62000-710a-430f-8184-84805f242eb0
+		summarizeBy: sum
+		sourceColumn: TFTNIV3 - RANKING
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComptesMappesPCG
+		dataType: int64
+		formatString: 0
+		lineageTag: bc98409c-b548-484d-965e-fe4da3b047e6
+		summarizeBy: sum
+		sourceColumn: ComptesMappesPCG
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAsh = ```
+			SWITCH( TRUE(), 
+			(Compte[Racine1] = 5 && Compte[Racine3] <> 508) 
+			|| Compte[Racine2] = 70 
+			|| Compte[Racine3] in {410,411,412,418,487,413,416,451,455,400,401, 471, 472,473,475,467} 
+			|| Compte[Racine4] in {4198,4457,4191} 
+			|| Compte[Racine5] = 44587 , 
+			"CA.sh", 
+			"autres")
+			```
+		lineageTag: acdefd97-6714-4479-beff-110e48a7f26a
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed 2' = ```
+			SWITCH(
+			    TRUE(),
+			    (Compte[Racine1] = 5 && Compte[Racine3] <> 508), Compte[Racine1],
+			    Compte[Racine2] = 70, Compte[Racine2],
+			    Compte[Racine3] IN {410, 411, 412, 418, 487, 413, 451, 455, 400, 401,467,471,472,473,475}, Compte[Racine3],
+			    Compte[Racine4] IN {4198, 4457, 4191}, Compte[Racine4],
+			    Compte[Racine5] = 44587, Compte[Racine5],
+			    -1
+			)
+			
+			```
+		dataType: int64
+		formatString: 0
+		lineageTag: f9a6fabf-6897-4f07-bbf0-6f572518850f
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed 1' = ```
+			SWITCH(
+			    TRUE(),
+			    (Compte[Racine1] = 5 && Compte[Racine3] <> 508), "CASH",
+			    Compte[Racine2] = 70, "CA",
+			    Compte[Racine3] IN {410, 411, 412} , "CREANCES",
+			    Compte[Racine4] = 4457, "TVA",
+			    Compte[Racine3] = 413, "EFFETS",
+			    Compte[Racine3] IN {418, 487, 416}|| Compte[Racine5] = 44587, "PROVISIONS",
+			    Compte[Racine3] IN {451, 455, 400, 401} ||Compte[Racine4] IN { 4191,4198}, "COMPENSATION DE CREANCES",
+			    "autres"
+			)
+			
+			```
+		lineageTag: 819a8012-e1ef-47c7-ab93-217a446ee979
+		summarizeBy: none
+		sortByColumn: 'CAsh detailed rank1'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed rank1' = ```
+			SWITCH(
+			    TRUE(),
+			    (Compte[Racine1] = 5 && Compte[Racine3] <> 508), 1,
+			    Compte[Racine2] = 70, 3,
+			    Compte[Racine3] IN {410, 411} || Compte[Racine4] = 4457, 2,
+			    Compte[Racine3] IN {418, 487, 416}|| Compte[Racine5] = 44587, 4,
+			    Compte[Racine3] IN {451, 455, 400, 401, 413} ||Compte[Racine4] IN { 4191,4198}, 6,
+			    5
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 38c56206-941a-4ba9-8462-e011dd45409d
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TFTNIV2
+		dataType: string
+		lineageTag: 9883b3a0-45e9-44c0-8b6c-a2668403a794
+		summarizeBy: none
+		sourceColumn: TFTNIV2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TFTNIV3
+		dataType: string
+		lineageTag: b559256f-5aa7-488a-bf61-ea3e403c757b
+		summarizeBy: none
+		sourceColumn: TFTNIV3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed 3' = ```
+			SWITCH(
+			    TRUE(),
+			    (Compte[Racine1] = 5 && Compte[Racine3] <> 508), "CASH",
+			    Compte[Racine2] = 70, "CA",
+			    Compte[Racine3] IN {410, 411,412} , "CREANCES",
+			    Compte[Racine4] = 4457, "TVA",
+			    Compte[Racine3] IN {413}, "Effets à l'encaissement", 
+			    Compte[Racine3] IN {418}, "Facture à établir",
+			    Compte[Racine4] IN {4198}, "Avoirs à émettre",
+			    Compte[Racine4] IN {4191}, "Avances et acomptes",
+			    Compte[Racine3] IN {487}, "Produits constatés d'avance",
+			    Compte[Racine3] IN {416}, "Douteux",
+			    Compte[Racine5] IN {44587}, "TVA de régularisation",
+			    Compte[Racine3] IN {401, 400}, "Compensation fournisseurs",
+			    Compte[Racine3] IN {451, 455,471,472,475,473,467} , "Compensation de créances",
+			    "autres"
+			)
+			
+			```
+		lineageTag: 9e5f324c-a709-4e04-b457-8886646c7106
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAPStocksVB
+		dataType: string
+		lineageTag: 5693dc90-7b0e-4db5-b304-397dd24314ce
+		summarizeBy: none
+		sourceColumn: SAPStocksVB
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh detailed 3 - slicer' = ```
+			SWITCH(
+			    TRUE(),
+			    (Compte[Racine1] = 5 && Compte[Racine3] <> 508), "Cash",
+			    Compte[Racine2] = 70, "Chiffre d'affaires",
+			    Compte[Racine3] IN {410, 411,412} , "Créances clients",
+			    Compte[Racine4] = 4457, "TVA",
+			    Compte[Racine3] IN {413}, "Effets à l'encaissement", 
+			    Compte[Racine3] IN {418}, "Factures à établir",
+			    Compte[Racine4] IN {4198}, "Avoirs à émettre",
+			    Compte[Racine4] IN {4191}, "Avances et acomptes",
+			    Compte[Racine3] IN {487}, "Produits constatés d'avance",
+			    Compte[Racine3] IN {416}, "Douteux",
+			    Compte[Racine5] IN {44587}, "TVA de régularisation",
+			    Compte[Racine3] IN {401, 400}, "Compensation fournisseurs",
+			    Compte[Racine3] IN {451, 455,471,472,473,467} , "Comptes intérmédiaires",
+			    "Autres"
+			)
+			
+			```
+		lineageTag: b1eb3cd0-4f3d-4485-8e8b-c893c1862478
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Compte = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\hajar\OneDrive - DataYoyo\Réseau partagé DY\06. CAC BI - développement\04. Travaux sur Mapping\Compte.xlsx"), null, true),
+				    Feuil1_Sheet = Source{[Item="Feuil1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Feuil1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Racine1", Int64.Type}, {"Racine2", Int64.Type}, {"Racine3", Int64.Type}, {"Racine4", Int64.Type}, {"Racine5", Int64.Type}, {"Racine6", Int64.Type}, {"Racine3Libelle", type any}, {"Categorie", type any}, {"Categorie2", type any}, {"Autresdettescreances", type any}, {"Rankingracine3lib", type number}, {"RankingCategorie", type number}, {"RankingAutredettescreances", type number}, {"ComptesMappesPCG", Int64.Type}, {"TFTNIV3 - RANKING", Int64.Type}, {"TFTNIV2 - RANKING", Int64.Type}, {"TFTNIV1 - RANKING", Int64.Type}, {"TFTNIV3", type text}, {"TFTNIV2", type text}, {"TFTNIV1", type text}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each [Racine1] <> null and [Racine1] <> ""),
+				    #"Lowercased Text" = Table.TransformColumns(#"Filtered Rows",{{"TFTNIV1", Text.Lower, type text}, {"TFTNIV2", Text.Lower, type text}, {"TFTNIV3", Text.Lower, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Lowercased Text","flux","Flux",Replacer.ReplaceText,{"TFTNIV1"}),
+				    #"Split Column by Position" = Table.SplitColumn(#"Replaced Value", "TFTNIV2", Splitter.SplitTextByPositions({0, 1}, false), {"TFTNIV2.1", "TFTNIV2.2"}),
+				    #"Uppercased Text" = Table.TransformColumns(#"Split Column by Position",{{"TFTNIV2.1", Text.Upper, type text}}),
+				    #"Merged Columns" = Table.CombineColumns(#"Uppercased Text",{"TFTNIV2.1", "TFTNIV2.2"},Combiner.CombineTextByDelimiter("", QuoteStyle.None),"Merged"),
+				    #"Split Column by Position1" = Table.SplitColumn(#"Merged Columns", "TFTNIV3", Splitter.SplitTextByPositions({0, 1}, false), {"TFTNIV3.1", "TFTNIV3.2"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Position1",{{"TFTNIV3.1", type text}, {"TFTNIV3.2", type text}}),
+				    #"Uppercased Text1" = Table.TransformColumns(#"Changed Type1",{{"TFTNIV3.1", Text.Upper, type text}}),
+				    #"Merged Columns1" = Table.CombineColumns(#"Uppercased Text1",{"TFTNIV3.1", "TFTNIV3.2"},Combiner.CombineTextByDelimiter("", QuoteStyle.None),"Merged.1"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Merged Columns1",{{"Merged", "TFTNIV2"}, {"Merged.1", "TFTNIV3"}})
+				in
+				    #"Renamed Columns"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

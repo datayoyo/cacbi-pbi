@@ -1,0 +1,699 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.2.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY18SU07",
+      "reportVersionAtImport": "3.15",
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Datayoyo9665569784643597.json",
+      "reportVersionAtImport": "5.56",
+      "type": "RegisteredResources"
+    }
+  },
+  "layoutOptimization": "None",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filterd8690800381042c3ff62",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "KPI"
+              }
+            },
+            "Property": "AccountNumber"
+          }
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "Filter4e98b6dbac445212819d",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Parametrage"
+              }
+            },
+            "Property": "AccountNumber"
+          }
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "SmartFilterProByOKViz00000000000000000000000000000000",
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A",
+    "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E"
+  ],
+  "resourcePackages": [
+    {
+      "name": "callApi87CF5176FFA749379B98AB5434388EC8",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "callApi87CF5176FFA749379B98AB5434388EC8.pbiviz.json",
+          "path": "callApi87CF5176FFA749379B98AB5434388EC8.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    },
+    {
+      "name": "SmartFilterProByOKViz00000000000000000000000000000000",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "SmartFilterProByOKViz00000000000000000000000000000000.pbiviz.json",
+          "path": "SmartFilterProByOKViz00000000000000000000000000000000.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "1.1_Qualification_-_Champs_imp5580641543983182.png",
+          "path": "1.1_Qualification_-_Champs_imp5580641543983182.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.2_Qualification_-_RAN7869597178850536.png",
+          "path": "1.2_Qualification_-_RAN7869597178850536.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.6_Qualification_-_Contr_le_d2639500018330825.png",
+          "path": "1.6_Qualification_-_Contr_le_d2639500018330825.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.7_Qualification_-_Mapping_PC7893962682138274.png",
+          "path": "1.7_Qualification_-_Mapping_PC7893962682138274.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.2_Immo._Tab._de_var.5359067630401921.png",
+          "path": "7.2_Immo._Tab._de_var.5359067630401921.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.6_Immo._PV_de_cession4096592851991254.png",
+          "path": "7.6_Immo._PV_de_cession4096592851991254.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.4_Stocks_-_DIO_PF452358725619457.png",
+          "path": "10.4_Stocks_-_DIO_PF452358725619457.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.5_Stocks_-_DIO_MP48812917839870207.png",
+          "path": "10.5_Stocks_-_DIO_MP48812917839870207.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.5_Clients_-_DSO9628307608009947.png",
+          "path": "11.5_Clients_-_DSO9628307608009947.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.5_Frs_-_DSO1460975417399768.png",
+          "path": "16.5_Frs_-_DSO1460975417399768.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.1_Qualification_-_Champs_imp562666892157248.png",
+          "path": "1.1_Qualification_-_Champs_imp562666892157248.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.2_Qualification__-_Qualit__d16809293007384363.png",
+          "path": "1.2_Qualification__-_Qualit__d16809293007384363.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.3_Qualification__-_D_tail_co8920839641031391.png",
+          "path": "1.3_Qualification__-_D_tail_co8920839641031391.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.4_Qualification__-_D_tail_da23734234945224109.png",
+          "path": "1.4_Qualification__-_D_tail_da23734234945224109.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.5_Qualification__-_D_tail_nu1623879739759455.png",
+          "path": "1.5_Qualification__-_D_tail_nu1623879739759455.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.6_Qualification__-_Bornage_d7487800492537078.png",
+          "path": "1.6_Qualification__-_Bornage_d7487800492537078.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.7_Qualification_-_Comptes_PC19040014357235435.png",
+          "path": "1.7_Qualification_-_Comptes_PC19040014357235435.png",
+          "type": "Image"
+        },
+        {
+          "name": "2.1_Etats_fi_-_Bilan5274096370615102.png",
+          "path": "2.1_Etats_fi_-_Bilan5274096370615102.png",
+          "type": "Image"
+        },
+        {
+          "name": "2.2_Etats_fi_-_PL8101828072217361.png",
+          "path": "2.2_Etats_fi_-_PL8101828072217361.png",
+          "type": "Image"
+        },
+        {
+          "name": "2.3_Etats_fi_-_BG08019874617407563.png",
+          "path": "2.3_Etats_fi_-_BG08019874617407563.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.1_Cash_-_TFT5831171038882406.png",
+          "path": "3.1_Cash_-_TFT5831171038882406.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.3_Cash_-_Endettement_net7099000558321078.png",
+          "path": "3.3_Cash_-_Endettement_net7099000558321078.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.4_Cash_-_BFR1191888443908693.png",
+          "path": "3.4_Cash_-_BFR1191888443908693.png",
+          "type": "Image"
+        },
+        {
+          "name": "4.1_SIG38982907587120796.png",
+          "path": "4.1_SIG38982907587120796.png",
+          "type": "Image"
+        },
+        {
+          "name": "5.1_Qualit__de_cl_ture7432934918007823.png",
+          "path": "5.1_Qualit__de_cl_ture7432934918007823.png",
+          "type": "Image"
+        },
+        {
+          "name": "8.1_Immo_fi_-_FM4874982497586364.png",
+          "path": "8.1_Immo_fi_-_FM4874982497586364.png",
+          "type": "Image"
+        },
+        {
+          "name": "8.2_Immo._fi8167545670698106.png",
+          "path": "8.2_Immo._fi8167545670698106.png",
+          "type": "Image"
+        },
+        {
+          "name": "9.1_Tr_sorerie_-_FM12057740718694498.png",
+          "path": "9.1_Tr_sorerie_-_FM12057740718694498.png",
+          "type": "Image"
+        },
+        {
+          "name": "9.2_Tr_sorerie_-_Flux14570029540442753.png",
+          "path": "9.2_Tr_sorerie_-_Flux14570029540442753.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.1_Stocks_-_FM17408038565727346.png",
+          "path": "10.1_Stocks_-_FM17408038565727346.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.3_Stocks_variation5883833680317514.png",
+          "path": "10.3_Stocks_variation5883833680317514.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.5_Stocks_DIO26142797623573544.png",
+          "path": "10.5_Stocks_DIO26142797623573544.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.6_Stocks_-_Bouclage_brut9095645809440651.png",
+          "path": "10.6_Stocks_-_Bouclage_brut9095645809440651.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.7_Stocks_-_Bouclage_d_pr_6292389755236694.png",
+          "path": "10.7_Stocks_-_Bouclage_d_pr_6292389755236694.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.1_Clients_-_FM2353925202518552.png",
+          "path": "11.1_Clients_-_FM2353925202518552.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.2_Clients_-_CA_par_clients7182861712923658.png",
+          "path": "11.2_Clients_-_CA_par_clients7182861712923658.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.3_Clients_-_Avoirs,_remises5948081725390111.png",
+          "path": "11.3_Clients_-_Avoirs,_remises5948081725390111.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.4_Clients_-_Cr_ances_client8628289499361614.png",
+          "path": "11.4_Clients_-_Cr_ances_client8628289499361614.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.5_Clients_-_DRM39949608823023053.png",
+          "path": "11.5_Clients_-_DRM39949608823023053.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.7_Clients_-_Bouclage_d_pr_7276739514366983.png",
+          "path": "11.7_Clients_-_Bouclage_d_pr_7276739514366983.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.8_Clients_-_Provisions11151684004281881.png",
+          "path": "11.8_Clients_-_Provisions11151684004281881.png",
+          "type": "Image"
+        },
+        {
+          "name": "12.1_CP_-_FM37175845647432415.png",
+          "path": "12.1_CP_-_FM37175845647432415.png",
+          "type": "Image"
+        },
+        {
+          "name": "12.2_Capitaux_propres7851276620709802.png",
+          "path": "12.2_Capitaux_propres7851276620709802.png",
+          "type": "Image"
+        },
+        {
+          "name": "13.1_PRC_-_FM1521518705138325.png",
+          "path": "13.1_PRC_-_FM1521518705138325.png",
+          "type": "Image"
+        },
+        {
+          "name": "13.2_Provisions_risques_et_cha7168562636967002.png",
+          "path": "13.2_Provisions_risques_et_cha7168562636967002.png",
+          "type": "Image"
+        },
+        {
+          "name": "14.1_Emprunts_-_FM7532362240716994.png",
+          "path": "14.1_Emprunts_-_FM7532362240716994.png",
+          "type": "Image"
+        },
+        {
+          "name": "14.2_Emprunts_et_CC5080261286800563.png",
+          "path": "14.2_Emprunts_et_CC5080261286800563.png",
+          "type": "Image"
+        },
+        {
+          "name": "15.1_Groupe_-_FM4189880524579266.png",
+          "path": "15.1_Groupe_-_FM4189880524579266.png",
+          "type": "Image"
+        },
+        {
+          "name": "15.2_Groupe7575629991766353.png",
+          "path": "15.2_Groupe7575629991766353.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.1_Frs_-_FM07376706219121676.png",
+          "path": "16.1_Frs_-_FM07376706219121676.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.2_Frs_-_Achats_par_auxiliai04159587101125184.png",
+          "path": "16.2_Frs_-_Achats_par_auxiliai04159587101125184.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.3_Frs_-_Ecritures_d_b.5137827375987409.png",
+          "path": "16.3_Frs_-_Ecritures_d_b.5137827375987409.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.4_Frs_-_Dettes_et_d_biteurs38027675913077763.png",
+          "path": "16.4_Frs_-_Dettes_et_d_biteurs38027675913077763.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.5_Frs_-_DSO49322742153637966.png",
+          "path": "16.5_Frs_-_DSO49322742153637966.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.7_Frs_-_provisions7962254727133946.png",
+          "path": "16.7_Frs_-_provisions7962254727133946.png",
+          "type": "Image"
+        },
+        {
+          "name": "17.1_Personnel_-_FM41583962571942745.png",
+          "path": "17.1_Personnel_-_FM41583962571942745.png",
+          "type": "Image"
+        },
+        {
+          "name": "17.2_Personnel8174908597862947.png",
+          "path": "17.2_Personnel8174908597862947.png",
+          "type": "Image"
+        },
+        {
+          "name": "17.3_Personnel_-_dettes_social7685892395656426.png",
+          "path": "17.3_Personnel_-_dettes_social7685892395656426.png",
+          "type": "Image"
+        },
+        {
+          "name": "18.1_Impots_-_FM7298753127543511.png",
+          "path": "18.1_Impots_-_FM7298753127543511.png",
+          "type": "Image"
+        },
+        {
+          "name": "19.1_Autres_comptes_-_FM8800793927330368.png",
+          "path": "19.1_Autres_comptes_-_FM8800793927330368.png",
+          "type": "Image"
+        },
+        {
+          "name": "20.1_Ecritures_-_Manipulation_06050939408128442.png",
+          "path": "20.1_Ecritures_-_Manipulation_06050939408128442.png",
+          "type": "Image"
+        },
+        {
+          "name": "20.2_Ecritures_-_Manipulation_5425752065238167.png",
+          "path": "20.2_Ecritures_-_Manipulation_5425752065238167.png",
+          "type": "Image"
+        },
+        {
+          "name": "20.3_Ecritures_-_Chiffre_d'aff2523661925845164.png",
+          "path": "20.3_Ecritures_-_Chiffre_d'aff2523661925845164.png",
+          "type": "Image"
+        },
+        {
+          "name": "20.4_Ecritures_-_Tr_sorerie3994894240086033.png",
+          "path": "20.4_Ecritures_-_Tr_sorerie3994894240086033.png",
+          "type": "Image"
+        },
+        {
+          "name": "20.5_Ecritures_-_Weekend_et_f_8404155438200174.png",
+          "path": "20.5_Ecritures_-_Weekend_et_f_8404155438200174.png",
+          "type": "Image"
+        },
+        {
+          "name": "21.1_SE_-_Ventes4160419184897406.png",
+          "path": "21.1_SE_-_Ventes4160419184897406.png",
+          "type": "Image"
+        },
+        {
+          "name": "21.2_SE_-_Achats029167648485364683.png",
+          "path": "21.2_SE_-_Achats029167648485364683.png",
+          "type": "Image"
+        },
+        {
+          "name": "21.3_SE_-_Tr_sorerie5463752524947603.png",
+          "path": "21.3_SE_-_Tr_sorerie5463752524947603.png",
+          "type": "Image"
+        },
+        {
+          "name": "21.4_SE_-_Recherche5827312813606162.png",
+          "path": "21.4_SE_-_Recherche5827312813606162.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.2_Stocks_(1)38974166884416195.png",
+          "path": "10.2_Stocks_(1)38974166884416195.png",
+          "type": "Image"
+        },
+        {
+          "name": "Voir_les_calculs4297485712403004.png",
+          "path": "Voir_les_calculs4297485712403004.png",
+          "type": "Image"
+        },
+        {
+          "name": "0._Page_de_garde6942213876165206.png",
+          "path": "0._Page_de_garde6942213876165206.png",
+          "type": "Image"
+        },
+        {
+          "name": "6.1_CA.sh6412224056342537.png",
+          "path": "6.1_CA.sh6412224056342537.png",
+          "type": "Image"
+        },
+        {
+          "name": "1.2_Qualification_-_Qualit__-_10964714906606421.png",
+          "path": "1.2_Qualification_-_Qualit__-_10964714906606421.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.6_Frs_-_Ant_riorit_5108417314466713.png",
+          "path": "16.6_Frs_-_Ant_riorit_5108417314466713.png",
+          "type": "Image"
+        },
+        {
+          "name": "8.3_Immo_fi._-_Bouclage_amort_5158444862879625.png",
+          "path": "8.3_Immo_fi._-_Bouclage_amort_5158444862879625.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.2_Cash_-_Evolution_tr_so5538768262386964.png",
+          "path": "3.2_Cash_-_Evolution_tr_so5538768262386964.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.4_Cash_-_BFR6806468089629332.png",
+          "path": "3.4_Cash_-_BFR6806468089629332.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.6_Clients_-_Balance_ag_e_(15515776378328618.png",
+          "path": "11.6_Clients_-_Balance_ag_e_(15515776378328618.png",
+          "type": "Image"
+        },
+        {
+          "name": "11.2_Clients_-_CA_par_clients18641976039623764.png",
+          "path": "11.2_Clients_-_CA_par_clients18641976039623764.png",
+          "type": "Image"
+        },
+        {
+          "name": "16.2_Frs_-_Achats_par_auxiliai858440251502985.png",
+          "path": "16.2_Frs_-_Achats_par_auxiliai858440251502985.png",
+          "type": "Image"
+        },
+        {
+          "name": "10.4_Stocks_DIO03024323867212564.png",
+          "path": "10.4_Stocks_DIO03024323867212564.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.3_Immo._Amort._et_d_p.451836800799416.png",
+          "path": "7.3_Immo._Amort._et_d_p.451836800799416.png",
+          "type": "Image"
+        },
+        {
+          "name": "Datayoyo9665569784643597.json",
+          "path": "Datayoyo9665569784643597.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "6.4_CA.sh309295471917417.png",
+          "path": "6.4_CA.sh309295471917417.png",
+          "type": "Image"
+        },
+        {
+          "name": "6.2_CA.sh_(1)6885778771418505.png",
+          "path": "6.2_CA.sh_(1)6885778771418505.png",
+          "type": "Image"
+        },
+        {
+          "name": "6.3_CA.sh46760426510312514.png",
+          "path": "6.3_CA.sh46760426510312514.png",
+          "type": "Image"
+        },
+        {
+          "name": "3.1_Cash_-_TFT8287647461727501.png",
+          "path": "3.1_Cash_-_TFT8287647461727501.png",
+          "type": "Image"
+        },
+        {
+          "name": "9.3_R_sultat_financier992871579496853.png",
+          "path": "9.3_R_sultat_financier992871579496853.png",
+          "type": "Image"
+        },
+        {
+          "name": "18.2_Imp_ts_-_Charges7154941914132875.png",
+          "path": "18.2_Imp_ts_-_Charges7154941914132875.png",
+          "type": "Image"
+        },
+        {
+          "name": "18.3_Imp_ts_-_Dettes_fiscales4631182168160861.png",
+          "path": "18.3_Imp_ts_-_Dettes_fiscales4631182168160861.png",
+          "type": "Image"
+        },
+        {
+          "name": "18.4_Imp_ts_-_TVA_col.5509844871468978.png",
+          "path": "18.4_Imp_ts_-_TVA_col.5509844871468978.png",
+          "type": "Image"
+        },
+        {
+          "name": "18.5_Imp_ts_-__TVA_d_d.9850233555829959.png",
+          "path": "18.5_Imp_ts_-__TVA_d_d.9850233555829959.png",
+          "type": "Image"
+        },
+        {
+          "name": "19.2_Autres_comptes_-_autres_c10181065406248258.png",
+          "path": "19.2_Autres_comptes_-_autres_c10181065406248258.png",
+          "type": "Image"
+        },
+        {
+          "name": "19.3_Autres_comptes_-_autres_e8376670408636511.png",
+          "path": "19.3_Autres_comptes_-_autres_e8376670408636511.png",
+          "type": "Image"
+        },
+        {
+          "name": "19.4_Autres_comptes_-_r_sultat03855275220987786.png",
+          "path": "19.4_Autres_comptes_-_r_sultat03855275220987786.png",
+          "type": "Image"
+        },
+        {
+          "name": "6.1_CA.sh_(2)36783939627661044.png",
+          "path": "6.1_CA.sh_(2)36783939627661044.png",
+          "type": "Image"
+        },
+        {
+          "name": "22.1_Base_de_donn_es_(1)9682538537544076.png",
+          "path": "22.1_Base_de_donn_es_(1)9682538537544076.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.1_Immo_-_FM6261902537509791.png",
+          "path": "7.1_Immo_-_FM6261902537509791.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.2_Immo._-_Brutes6734628607218354.png",
+          "path": "7.2_Immo._-_Brutes6734628607218354.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.3_Immo._-_Amort._et_d_p.6556896743198026.png",
+          "path": "7.3_Immo._-_Amort._et_d_p.6556896743198026.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.4_Immo_-_Bouclage_amort_et_d06678271989752771.png",
+          "path": "7.4_Immo_-_Bouclage_amort_et_d06678271989752771.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.5_Immo_-_Bouclage_sorties18257937146955872.png",
+          "path": "7.5_Immo_-_Bouclage_sorties18257937146955872.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.6_Immo_-_PV_cession1646525720066958.png",
+          "path": "7.6_Immo_-_PV_cession1646525720066958.png",
+          "type": "Image"
+        },
+        {
+          "name": "7.7_Immo._Charges_d'entretien11041968154214143.png",
+          "path": "7.7_Immo._Charges_d'entretien11041968154214143.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY18SU07",
+          "path": "BaseThemes/CY18SU07.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
+          "path": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "useEnhancedTooltips": true,
+    "useScaledTooltips": true,
+    "disableFilterPaneSearch": true,
+    "queryLimitOption": "None",
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

@@ -1,0 +1,37 @@
+table TableLettrage
+	lineageTag: 9e5ac84a-939f-4e97-b0f0-dbbbad30024b
+
+	column CodeLet
+		dataType: int64
+		formatString: 0
+		lineageTag: 2979b47d-8ae1-4642-a226-156c6e808e42
+		summarizeBy: sum
+		sourceColumn: CodeLet
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: d3d35515-4db4-41b3-9942-3823655fa5e0
+		summarizeBy: none
+		sourceColumn: Description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TableLettrage = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlDSUfLLz1PISS0pKTq8UilWJ1rJECjmA+PHAgA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [CodeLet = _t, Description = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CodeLet", Int64.Type}, {"Description", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

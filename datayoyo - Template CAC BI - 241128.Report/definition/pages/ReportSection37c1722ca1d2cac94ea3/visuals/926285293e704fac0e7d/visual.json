@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "926285293e704fac0e7d",
+  "position": {
+    "x": 739.89669421487611,
+    "y": 282.98553719008265,
+    "z": 14000,
+    "height": 23.522727272727273,
+    "width": 19.958677685950413,
+    "tabOrder": 14000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Qna'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'La vérification des à-nouveaux constitue une procédure de contrôle essentielle visant à confirmer l''adéquation entre les à-nouveaux du Fichier des Écritures Comptables (FEC) ou du Grand Livre (GL) de l''exercice N et les soldes de clôture des comptes de bilan du FEC ou du GL de l''exercice précédent (N-1). Tout écart détecté nécessite une justification, étant donné qu''il pourrait indiquer soit que le FEC de l''exercice N-1 n''est pas le définitif, soit l''existence d''une anomalie dans le FEC de l''exercice N relative à la reprise des à-nouveaux.'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

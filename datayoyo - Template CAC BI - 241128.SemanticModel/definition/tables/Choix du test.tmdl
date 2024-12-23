@@ -1,0 +1,55 @@
+table 'Choix du test'
+	lineageTag: 0c7db5f6-671c-4c49-978d-b985e6b8ee61
+
+	column Code
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d60a6761-b7cf-4d27-8ab8-11f49f93a579
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: c223e1ee-fc1a-42a5-8ebe-1b5a728ab6f5
+		summarizeBy: none
+		sourceColumn: KeyDC
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 304a33d0-17f4-4e34-b528-108612a794a3
+		summarizeBy: none
+		sourceColumn: Value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Choix du test-2d01df75-bcbc-459e-b429-618a1f2d9773' = m
+		mode: import
+		queryGroup: 'Field Param'
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    #"Choix du test1" = public{[Name="Choix du test"]}[Data]
+				in
+				    #"Choix du test1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

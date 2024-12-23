@@ -1,0 +1,115 @@
+table MappingKPI
+	lineageTag: bf196455-546f-4221-a1bf-bc786b3242ec
+
+	column LiasseCode
+		dataType: string
+		lineageTag: d91f0ce1-146d-4034-a4b5-dc038cb0d814
+		summarizeBy: none
+		sourceColumn: LiasseCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attribute
+		dataType: string
+		lineageTag: 244a2919-ea2d-4989-9c76-d991359d1f61
+		summarizeBy: none
+		sourceColumn: Attribute
+		sortByColumn: RankingAttribute
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		lineageTag: 8e93a9b3-1c02-4757-929b-e2e78c69f4a1
+		summarizeBy: none
+		sourceColumn: Value
+		sortByColumn: Ranking
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ranking
+		dataType: double
+		formatString: 0
+		lineageTag: ac698ed5-a3a2-471c-9cf9-8c4441b78a53
+		summarizeBy: sum
+		sourceColumn: Ranking
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingAttribute
+		dataType: double
+		lineageTag: 31aab9c1-c61a-488c-af02-788e89e228ee
+		summarizeBy: sum
+		sourceColumn: RankingAttribute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Attribute niveau 1'
+		dataType: string
+		lineageTag: 29a91336-25a3-42b6-87e4-84d253d6ad9f
+		summarizeBy: none
+		sourceColumn: Attribute niveau 1
+		sortByColumn: 'RankingAttribute 2'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RankingAttribute 2'
+		dataType: double
+		lineageTag: c3ba5996-b6e2-4bf5-9065-f10998ee68ee
+		summarizeBy: sum
+		sourceColumn: RankingAttribute 2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'RankingAttribute 1'
+		dataType: double
+		lineageTag: f8839cb4-52ce-46b7-b760-9a9a549e2592
+		summarizeBy: sum
+		sourceColumn: RankingAttribute 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition MappingKPI-445db4ed-ad64-4d15-8907-1be5b1de6b25 = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("xZvLdps4GIBfheO1T8bgW7z0LYnbxEmML0k6XRAsN8zY4BGQk2WfYJ6j2c9uln6TeZKRBBiMJCPbCC84dWv8fRKgX79+0W/fSp3bUrnUAa5j2QqwlYVjz11lDhTo+EuwAraHvtY9x/zTxeddjZT5736lojXBx3rpWJ7hWY6NvlF3ju9lBL6TBR7KAt/LAj/IAj/KAo9kgXVZ4LEs8EQW+Ckb3F1a6IOrAE8x1x5wFWh4nmG+bT732zTa9lykrSfQtx7wsGPh+NC2XBf4cL+lSvdpmm1p+x5EFhNuPg3bBJHizYGon7uCWgjXyEEEM9mCF8mCblu2oCNbcCNbIDADniYQmAlPEwjMiCcJegLBIxrOlmsaS0CCiOuYFv68x1WnXeJjbk6Ue+gNmi4+4I6g98VH2zF08aF2DL0nk37VRR/vDPgDoD+niEYwysqA5pthzy2X8MgJiumsVgCSRwf9WzMM/cFBWHqC1Ua/90RZlzRrnGyXAS3SBYxz8ZweQC84uBaNu0rgHqAz982I94rm1mBUAPhumYk2rrfn4ctWCYE1chDoQAb0TgZ0KAM64dxuz9r8gvj3YEU+cYgqTZxm3XTvgmAvOEiNQnbx6OnbZGTgwaIMAR4wYxRuXQcCaIHdv+Ersfn8y7fe0aNkBz3ydk5Wq+EAqpMjkLSLsPQLkRTSlasCJD2dKdmJlRgMVmvoI2gpmisxrhbiGuQguHG+uAkTF87Whr+Gm18Yi5nuBe4wThHmlrfDrdPcqRwumShG6JL7SzSdcJYC3TdrsUBDP/zWWCwMCxJi/8NEFtyeDvS3P++n1mKNUNkkxzZwn0E7OI9WF9CGobbr2C6a9YI1oJiwSQvHRQsnRQunRQufhR4dPHuROPYAoOvYNlgKOy9p58sZnE8CzsFqvfknqFyMjY8DxkaL9s0O6GP/wwPQFvdpFdp3L+DT/dd3hCZZCvMEQXu5TvsfBPw9B2VEvykjsFaMlQO9sjLffKIQ/2kGuRO58ihHescswEf99/NvBTdEDZtxSQ7cjOu2aDNkNaBz7gaIzHxSG9A7cwPImiQzhgaJEFldWCT9EZFptGxYpOyxQNl1X1wWBjJBV5XuWFc0+HAX/VOUa/tQMf5wfG/ziZNsDaexOFK1yLHNz4Q8iWUnCplzH3AUZZWWDIqQ3B0hIetSwLVotGV4hMVarZxXa4nuC9dUpU26qKnrbP7dfmfgVIisD5KPQ3g1eY9FuU7rx+fVT8T1KOm7IMqxBSDX0aAd0wIcswIc96KOnNKd6HbhZEetxNmk0K8TKaV3SEqpNRjWZ+GrGyfP60OTZ63JML+czdxlPhncaWC3XLiMbjuutprkkcKTTq0UlghVNZ4WaAkrPGfyWyz+QDL/LosfR/4sQbXCEgyzBLtBP1OisiQ6U3JYwKUK7DjpCBOPqhZayR6wFgf+wqUTjjQrJia5UeUYPxBqNQ7xMrgzSdzdtYrp+NAIXiHg1qr25ZfYUgvDBx7mao1VlJNlGRRi0XmWgx7YLHOdYR6fzTzhmqnn7xj8VC7+mYdnF7iyFA2G4kW+4omjYJTMsvBNBn6W3z24ZOAfOPjTyxDY2KKNqTpUEcZO4UZe9JZn7BVtTNWSYuNhVRY89VUY9KFU+r1U+qNMeqr4RNHFCk4YrjLgNxz4o++gh8WAnuKsL/DrKzil823O2TUtRJN3A9RgG/ealwbkwf7COTv+t4VlG7aJIiWPW2Vxv0ri3kri8gblqVzecDyVyxuIp3J5Q/BU7kgSl5e8nsrlpaYncsnyRB9cKz+WzquBMyd+Lh8sAYMT8dqoVivFL4qpjXghkidvkDNPT/PCnWYzudNMkeqkPJ1mjXNkTXJkTXNk3aVZ6YpLsE6maQzWcA9rt7gihLtP43IohiZW8+iCRFYyai7jtU7qgTxyFz/pajBML4WZntKmo94SSFqaDMuM6g+3uNJOFFeCW6GFQFJaSezH7wDz2XKNpK1StH+H+1Cux6uewqWdc0ipqaEIae8MUpLn7wbMgzeYQ0G9wuxVnyMQ31SO+CqTf5PmH5CKR+RohAXpQStO9aWAv6TBgolMBK2yoF9lQG9lQKlpNQ8oNb/mAaVm2Tyg1IDLAzqSAaXyxTygVOKYA/SGmpi2IQV8mGCNA0m6Nsrat6pXt2kPeXtfCzYpb6gpKF88Ndnki6cCcL54atWTL/5aLp6KxQ8ovlumtY7+t4eruMbSgFawcsiQ1FgKKjIP9GwS1djv/wM=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [LiasseCode = _t, Attribute = _t, Value = _t, #"Attribute niveau 1" = _t, Ranking = _t, RankingAttribute = _t, #"RankingAttribute 1" = _t, #"RankingAttribute 2" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"LiasseCode", type text}, {"Attribute", type text}, {"Value", type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Changed Type",{{"Ranking", type number}, {"RankingAttribute 2", type number}, {"RankingAttribute", type number}, {"RankingAttribute 1", type number}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Changed Type1", each ([LiasseCode] <> "")),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Filtered Rows",{{"RankingAttribute 1", type number}})
+				in
+				    #"Changed Type2"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

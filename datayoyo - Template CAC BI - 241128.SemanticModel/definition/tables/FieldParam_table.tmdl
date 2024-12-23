@@ -1,0 +1,58 @@
+table FieldParam_table
+	lineageTag: 4cdb6126-0f76-434c-a355-8c45022d2291
+
+	column Code
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: 0f25096d-3f79-480c-a5fe-5111701553f1
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KeyDC
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: b6e90809-70a2-464a-bf2d-10389c766060
+		summarizeBy: none
+		sourceColumn: KeyDC
+		sortByColumn: Code
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 70673ca2-45fd-4afd-b155-ac4ce97ecf20
+		summarizeBy: none
+		sourceColumn: Value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FieldParam_table-8ef581cd-982a-4f0b-83e8-c5affc766eb4 = m
+		mode: import
+		queryGroup: 'Field Param'
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    FieldParam_table1 = public{[Name="FieldParam_table"]}[Data]
+				in
+				    FieldParam_table1
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

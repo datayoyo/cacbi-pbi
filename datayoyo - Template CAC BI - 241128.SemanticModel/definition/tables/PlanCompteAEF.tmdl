@@ -1,0 +1,556 @@
+table PlanCompteAEF
+	lineageTag: fc8f71b3-6301-4935-8c81-ae99d9ee3b2e
+
+	column LiasseCode
+		dataType: string
+		lineageTag: 178ebd32-356c-480e-9f9d-543019275b3b
+		summarizeBy: none
+		sourceColumn: LiasseCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column BilanNiv1
+		dataType: string
+		lineageTag: d1b80de1-ac52-41bd-a857-a8b2dabc16ef
+		summarizeBy: none
+		sourceColumn: BilanNiv1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column BilanNiv2
+		dataType: string
+		lineageTag: 20e8a852-2db4-4aa8-8299-d4a042cd9d42
+		summarizeBy: none
+		sourceColumn: BilanNiv2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieEtatsFinanciers
+		dataType: string
+		lineageTag: fd1e4e22-b942-4db0-ae1c-7835afa72da3
+		summarizeBy: none
+		sourceColumn: CategorieEtatsFinanciers
+		sortByColumn: RankingEtatsfinanciers0
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SousCategorieEtatsFianncier
+		dataType: string
+		lineageTag: 37296896-fc51-4a11-ab7f-5384c18e5afb
+		summarizeBy: none
+		sourceColumn: SousCategorieEtatsFianncier
+		sortByColumn: RankingEtatsfinanciers
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingEtatsfinanciers
+		dataType: double
+		formatString: 0
+		lineageTag: 470977a1-dc5d-4d9a-95dd-8924b671dd52
+		summarizeBy: sum
+		sourceColumn: RankingEtatsfinanciers
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetailNiv1
+		dataType: string
+		lineageTag: c1a45e27-8faf-45d1-81c1-e2479d38df0f
+		summarizeBy: none
+		sourceColumn: DetailNiv1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingNiv1
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ef4b5be-b3b4-41d3-b43e-ed1472a02a38
+		summarizeBy: sum
+		sourceColumn: RankingNiv1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetailNiv2
+		dataType: string
+		lineageTag: 49b23558-211e-4277-b367-a6f28a1c12f2
+		summarizeBy: none
+		sourceColumn: DetailNiv2
+		sortByColumn: RankingNiv2
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingNiv2
+		dataType: int64
+		formatString: 0
+		lineageTag: e30e8b9c-c82a-4fac-b2ca-297ce3d94885
+		summarizeBy: sum
+		sourceColumn: RankingNiv2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetailNiv3
+		dataType: string
+		lineageTag: f980fa73-21a3-4909-975f-a97f5ef6e681
+		summarizeBy: none
+		sourceColumn: DetailNiv3
+		sortByColumn: RankingNiv3
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingNiv3
+		dataType: int64
+		formatString: 0
+		lineageTag: b85e4370-4a49-4f52-aec9-4c334aa9f647
+		summarizeBy: sum
+		sourceColumn: RankingNiv3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageStocks
+		dataType: string
+		lineageTag: 0109865a-9ab1-45dc-9832-7e3995ebf8c2
+		summarizeBy: none
+		sourceColumn: MarquageStocks
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Visuel
+		dataType: string
+		lineageTag: 5a79e37c-54b9-4d79-8cb1-613451ef485c
+		summarizeBy: none
+		sourceColumn: Visuel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageBFR
+		dataType: string
+		lineageTag: fc7249f9-34d9-49a9-a530-9194cb056f35
+		summarizeBy: none
+		sourceColumn: MarquageBFR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieBFR
+		dataType: string
+		lineageTag: d7cad978-f3e4-4a25-a8fb-9aa00b468d7a
+		summarizeBy: none
+		sourceColumn: CategorieBFR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SousCategorieBFR
+		dataType: string
+		lineageTag: bd03395d-7d11-4459-92cb-b144a9cc7221
+		summarizeBy: none
+		sourceColumn: SousCategorieBFR
+		sortByColumn: RankingBFR
+
+		changedProperty = IsHidden
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingBFR
+		dataType: int64
+		formatString: 0
+		lineageTag: 225ef0fa-0675-490f-b346-df61ba0adfd3
+		summarizeBy: sum
+		sourceColumn: RankingBFR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageMarge
+		dataType: string
+		lineageTag: 9ec47672-5e47-4757-95ac-221afe03bba6
+		summarizeBy: none
+		sourceColumn: MarquageMarge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieMarge
+		dataType: string
+		lineageTag: 3c413ea3-f481-4b69-861c-c7666117b43b
+		summarizeBy: none
+		sourceColumn: CategorieMarge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SousCategorieMarge
+		dataType: string
+		lineageTag: 291f82f1-0902-49b7-9c49-21e4ac26cc5a
+		summarizeBy: none
+		sourceColumn: SousCategorieMarge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingMarge
+		dataType: int64
+		formatString: 0
+		lineageTag: 752e2805-9e03-466a-84d2-b931dbf4dcbc
+		summarizeBy: sum
+		sourceColumn: RankingMarge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageEndettementNet
+		dataType: string
+		lineageTag: f50b986d-de09-4a19-a68a-bebeb77f7d1c
+		summarizeBy: none
+		sourceColumn: MarquageEndettementNet
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieEndettementNet
+		dataType: string
+		lineageTag: 87fcd4c4-94d6-4769-a26a-a9b420b68b3e
+		summarizeBy: none
+		sourceColumn: CategorieEndettementNet
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingEndettement
+		dataType: int64
+		formatString: 0
+		lineageTag: c56671f9-5a2c-4840-bf31-0d9dec8a9638
+		summarizeBy: sum
+		sourceColumn: RankingEndettement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageREX
+		dataType: string
+		lineageTag: 11ffceac-2e5d-4cf8-b2e2-6bfe6a589dd0
+		summarizeBy: none
+		sourceColumn: MarquageREX
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieREX
+		dataType: string
+		lineageTag: 0c6fe21f-d99b-49d2-8d8b-3c4ff14daf7b
+		summarizeBy: none
+		sourceColumn: CategorieREX
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingREX
+		dataType: int64
+		formatString: 0
+		lineageTag: dbbd2c7d-0146-4d6b-aabb-ce26e4b854cc
+		summarizeBy: sum
+		sourceColumn: RankingREX
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Categorie Immo'
+		dataType: string
+		lineageTag: 08fe1a83-f439-4527-98b6-b405845cd559
+		summarizeBy: none
+		sourceColumn: Categorie Immo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ranking Immo'
+		dataType: int64
+		formatString: 0
+		lineageTag: 30d44098-d71e-4a79-93da-fd0da6a7300e
+		summarizeBy: sum
+		sourceColumn: Ranking Immo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Marquage EBE'
+		dataType: string
+		lineageTag: 8e674d18-dd53-4aaa-b2e0-17cd511bcc9d
+		summarizeBy: none
+		sourceColumn: Marquage EBE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Categorie EBE'
+		dataType: string
+		lineageTag: 714b6291-9c25-400d-afaa-dd039bbbdfed
+		summarizeBy: none
+		sourceColumn: Categorie EBE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ranking EBE'
+		dataType: int64
+		formatString: 0
+		lineageTag: 26dc38d4-46db-4c32-86f5-503987041c77
+		summarizeBy: sum
+		sourceColumn: Ranking EBE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LiasseLibelle
+		dataType: string
+		lineageTag: ee0cc90c-808c-4874-9369-0e885ad3c58a
+		summarizeBy: none
+		sourceColumn: LiasseLibelle
+		sortByColumn: LiasseCode
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LiasseLibelleAffichage
+		dataType: string
+		lineageTag: 7c746059-777a-4ca2-886b-500214991b0d
+		summarizeBy: none
+		sourceColumn: LiasseLibelleAffichage
+		sortByColumn: LiasseCode
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingEtatsfinanciers0
+		dataType: double
+		lineageTag: c4d009b2-b138-4b43-b65d-6d7c4f761c0f
+		summarizeBy: sum
+		sourceColumn: RankingEtatsfinanciers0
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MarquageVA
+		dataType: string
+		lineageTag: 52417c97-f34b-44b2-8d98-363ac462abe8
+		summarizeBy: none
+		sourceColumn: MarquageVA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieVA
+		dataType: string
+		lineageTag: 8d0e4bae-1969-401b-b8cb-53f2362ec688
+		summarizeBy: none
+		sourceColumn: CategorieVA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingVA
+		dataType: string
+		lineageTag: 4fbcb954-f430-48b6-a22e-a0ff88a83b18
+		summarizeBy: none
+		sourceColumn: RankingVA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageResultatCourant
+		dataType: string
+		lineageTag: deb25c13-ed5e-48a4-afd1-db07be75bf0c
+		summarizeBy: none
+		sourceColumn: MarquageResultatCourant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieResultatCourant
+		dataType: string
+		lineageTag: 6da16615-3551-43d6-b758-bdf922e0b520
+		summarizeBy: none
+		sourceColumn: CategorieResultatCourant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingResultatCourant
+		dataType: string
+		lineageTag: a0308efd-0350-4388-a19d-a647e1208008
+		summarizeBy: none
+		sourceColumn: RankingResultatCourant
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarquageSIG
+		dataType: string
+		lineageTag: 76196cd6-044e-48b8-861b-2555fe77d67c
+		summarizeBy: none
+		sourceColumn: MarquageSIG
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieSIG
+		dataType: string
+		lineageTag: ddc7dd2d-f823-40fc-ab27-0dd634d9c93c
+		summarizeBy: none
+		sourceColumn: CategorieSIG
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingSIG
+		dataType: string
+		lineageTag: ea599566-b3a9-4a0e-956c-66c438c9fc9c
+		summarizeBy: none
+		sourceColumn: RankingSIG
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tresorerie
+		dataType: string
+		lineageTag: a386a04b-b93a-4cc2-a8be-06513c479602
+		summarizeBy: none
+		sourceColumn: Tresorerie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CatTresorerie
+		dataType: string
+		lineageTag: a1b92b3f-2650-4484-945a-973ed335763b
+		summarizeBy: none
+		sourceColumn: CatTresorerie
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingTreso
+		dataType: string
+		lineageTag: 18914f94-dfef-429a-ad9b-0b5d3b612ba9
+		summarizeBy: none
+		sourceColumn: RankingTreso
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetailNiv2_1
+		dataType: string
+		lineageTag: 9ac9f7e8-2035-43be-9f66-140509122130
+		summarizeBy: none
+		sourceColumn: DetailNiv2_1
+		sortByColumn: RankingNiv2_2
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingNiv2_2
+		dataType: double
+		lineageTag: dcd635fd-29ca-474f-aea9-20d89556131d
+		summarizeBy: sum
+		sourceColumn: RankingNiv2_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition PlanCompteAEF-0cff231a-e5da-42e0-90a4-aa573aba3c38 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\hajar\OneDrive - DataYoyo\Réseau partagé DY\06. CAC BI - développement\04. Travaux sur Mapping\Mapping CAC BI.xlsx"), null, true),
+				    #"Mapping CAC BI (2)_Sheet" = Source{[Item="Mapping CAC BI",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Mapping CAC BI (2)_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"LiasseCode", type text}, {"BilanNiv1", type text}, {"BilanNiv2", type text}, {"CategorieEtatsFinanciers", type text}, {"SousCategorieEtatsFianncier", type text}, {"RankingEtatsfinanciers", type number}, {"DetailNiv1", type text}, {"RankingNiv1", Int64.Type}, {"DetailNiv2", type text}, {"RankingNiv2", Int64.Type}, {"DetailNiv3", type text}, {"RankingNiv3", Int64.Type}, {"MarquageStocks", type text}, {"Visuel", type any}, {"MarquageBFR", type text}, {"CategorieBFR", type text}, {"SousCategorieBFR", type text}, {"RankingBFR", Int64.Type}, {"MarquageMarge", type text}, {"CategorieMarge", type text}, {"SousCategorieMarge", type text}, {"RankingMarge", Int64.Type}, {"MarquageEndettementNet", type text}, {"CategorieEndettementNet", type text}, {"RankingEndettement", Int64.Type}, {"MarquageREX", type text}, {"CategorieREX", type text}, {"RankingREX", Int64.Type}, {"Categorie Immo", type text}, {"Ranking Immo", Int64.Type}, {"Marquage EBE", type text}, {"Categorie EBE", type text}, {"Ranking EBE", Int64.Type}, {"RankingEtatsfinanciers0", type number}, {"DetailNiv2_1", type text}, {"RankingNiv2_2", type number}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

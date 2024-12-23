@@ -1,0 +1,57 @@
+table FieldParam_measures
+	lineageTag: 113422be-0dd5-491e-a766-13042f320e7c
+
+	column Value
+		lineageTag: c4cb18f7-d908-4152-8544-591d5dbc8128
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: Code
+
+		relatedColumnDetails
+			groupByColumn: KeyDC
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		lineageTag: 07d7b911-a500-4130-abcb-c3d65f7c5f17
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: Code
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		formatString: 0
+		lineageTag: c19702cb-781a-49bf-9c42-9b776c067d96
+		summarizeBy: count
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FieldParam_measures-3cff59c1-a147-4450-ae8c-12d957a2cbf3 = calculated
+		mode: import
+		source =
+				{
+				    ("Solde", NAMEOF('KPI'[_Gene_Solde inv]), 0),
+				    ("CA débiteur", NAMEOF('KPI'[_Gene_Solde inv debit]), 1),
+				    ("Moyenne", NAMEOF('KPI'[_Gene_Solde Moyen inv]), 9),
+				    ("Solde cumulé", NAMEOF([_Gene_Solde Cumulé]), 3),
+				    ("Solde", NAMEOF([_Gene_Solde GL]), 4),
+				    ("Achat moyen", NAMEOF([_Gene_Solde Moyen basic]), 5),
+				    ("Achat", NAMEOF([_Gene_Solde GL]), 6),
+				    ("Solde cumulé inversé", NAMEOF([_Gene_Solde Cumulé inv]), 7),
+				    ("Solde inversé", NAMEOF('KPI'[_Gene_Solde inv]), 8),
+				    ("CA créditeur", NAMEOF([_Gene_Solde inv credit]), 2),
+				    ("Achat créditeur", NAMEOF([_Gene_Solde credit]), 10),
+				    ("Achat débiteur", NAMEOF([_Gene_Solde debit]), 11),
+				    ("Flux", NAMEOF([_Gene_Solde GL]), 12)
+				}
+
+	annotation PBI_Id = 87955d4e04ac4c9ab5b34d4c0d8939a5
+

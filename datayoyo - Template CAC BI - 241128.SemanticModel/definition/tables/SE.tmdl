@@ -1,0 +1,249 @@
+table SE
+	lineageTag: e831b1aa-0d92-4253-8b40-23fa3e2e0191
+
+	column SchemaEcriture
+		lineageTag: f9a1278a-dac8-40c5-a1ae-927efb1eb5d6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: KPI[SchemaEcriture]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 70 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "",
+			    IF(
+			        CONTAINSSTRING(SE[SchemaEcriture], "|70|"),
+			        "1",
+			        "2"
+			    )
+			)
+		dataType: string
+		lineageTag: 74ae1a6d-fae8-4f20-bc1a-43b006d88d6a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 411/410 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "AN",
+			    IF(
+			         CONTAINSSTRING(SE[SchemaEcriture], "|410|") || CONTAINSSTRING(SE[SchemaEcriture], "|411|") || CONTAINSSTRING(SE[SchemaEcriture], "|412|"),
+			        "1",
+			        "2"
+			    )
+			)
+		lineageTag: ef0c7e08-2f67-4065-acd9-b8400122ab52
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 512 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "AN",
+			    IF(
+			         CONTAINSSTRING(SE[SchemaEcriture], "|5|") ,
+			        "1",
+			        "2"
+			    )
+			)
+		lineageTag: bbe819f7-a31f-4616-a151-31b186f3b1bf
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh CAT1' = ```
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="", "AN",
+			    [70] = "2" && [512] = "2" && [411/410] = "2", "hors scope",
+			    [70] = "1" && [411/410] = "1" && [512] = "2", "CREANCES - CA",
+			    [70] = "1" && [512] = "1" && [411/410] = "2", "CASH - CA",
+			    [411/410] = "1" && [512] = "1" && [70] = "2", "CASH - CREANCES",
+			    [70] = "1" && [512] = "1" && [411/410] = "1", "CASH - CREANCES - CA",
+			    [512] = "1" && [411/410] = "2" && [70] = "2", "hors scope",
+			    [411/410] = "1" && [70] = "2" && [512] = "2", "CREANCES - hors CASH et CA",
+			    [70] = "1" && [512] = "2" && [411/410] = "2", "CA - hors CREANCES et CASH",
+			    "hors scope"
+			)
+			
+			```
+		lineageTag: a45f9dee-b46f-4cef-ae77-cbade9714651
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Autres = ```
+			IF(
+			         NOT(CONTAINSSTRING(SE[SchemaEcriture], "|5|") || CONTAINSSTRING(SE[SchemaEcriture], ",70,") || CONTAINSSTRING(SE[SchemaEcriture], ",411,") || CONTAINSSTRING(SE[SchemaEcriture], ",412,")  ),
+			        "2",
+			        "1"
+			    )
+			
+			```
+		lineageTag: 9dfb8c23-5f36-4d5a-aab6-d107b09e2a5e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh CAT1 V2' = ```
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="", "AN",
+			
+			    SE[SchemaEcriture] in {"|5|70|", "|4457|5|70|"} , "CA niv2 - cash total",
+			    SE[SchemaEcriture] in {"|411|5|","|410|5|","|412|5|", "|411|4457|5|", "|410|4457|5|", "|412|4457|5|"} , "CREANCES niv2 - cash total",
+			    SE[SchemaEcriture] in {"|413|5|"} , "EFFETS niv2 - cash total",
+			
+			    [70] = "2" && [512] = "2" && [411/410] = "2" && [413]= "2" , "hors scope",
+			
+			    [70] = "1" && [411/410] = "1" && [512] = "2", "CA niv1",
+			    [70] = "1" && [512] = "1" , "CA niv2 - cash partiel",
+			    [70] = "1" && [512] = "2" && [411/410] = "2", "CA niv1",
+			
+			    [411/410] = "1" && [512] = "1" && [70] = "2", "CREANCES niv2 - cash partiel",
+			    [411/410] = "1" && [70] = "2" && [512] = "2", "CREANCES niv1",
+			
+			    [413] = "1" && [512] = "1" , "EFFETS niv2 - cash partiel",
+			    [413] = "1" , "EFFETS niv1",
+			
+			    [512] = "1" && [411/410] = "2" && [70] = "2" && [413] = "2", "hors scope",
+			
+			
+			    "hors scope"
+			)
+			
+			```
+		lineageTag: 0d7b20fc-9af2-4b92-9d62-56dab7f33cd8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 413 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "AN",
+			    IF(
+			         CONTAINSSTRING(SE[SchemaEcriture], "|413|") ,
+			        "1",
+			        "2"
+			    )
+			)
+		lineageTag: e3d01c31-d771-40b1-9a1f-f8a3ff095088
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 455/457 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "AN",
+			    IF(
+			         CONTAINSSTRING(SE[SchemaEcriture], "|471|") || CONTAINSSTRING(SE[SchemaEcriture], "|472|") || CONTAINSSTRING(SE[SchemaEcriture], "|473|") || CONTAINSSTRING(SE[SchemaEcriture], "|475|") || CONTAINSSTRING(SE[SchemaEcriture], "|451|") || CONTAINSSTRING(SE[SchemaEcriture], "|455|") || CONTAINSSTRING(SE[SchemaEcriture], "|467|"),
+			        "1",
+			        "2"
+			    )
+			)
+		lineageTag: bc8d6636-cc2c-43c2-a7b6-095dd18bc49a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh CAT FACTOR' =
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="", "AN",
+			    [455/457] = "2" && [512] = "2" && [411/410] = "2", "Autres contreparties",
+			    [455/457] = "1" && [411/410] = "1" && [512] = "2", "| Créances | Comptes intermédiaires |",
+			    [455/457] = "1" && [512] = "1" && [411/410] = "2", "| Cash | Comptes intermédiaires |",
+			    [455/457] = "1" && [512] = "1" && [411/410] = "1", "| Cash | Créances | Comptes intermédiaires |",
+			    [455/457] = "1" && [411/410] = "2" && [70] = "2", "Autres contreparties",
+			    "Autres contreparties"
+			)
+		lineageTag: 0138d707-ea06-4286-9dc3-63e57c3e8613
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh CAT EFFETS' =
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="", "AN",
+			    [413] = "2" && [512] = "2" && [411/410] = "2", "Autres contreparties",
+			    [413] = "1" && [411/410] = "1" && [512] = "2", "| Créances | Effets |",
+			    [413] = "1" && [512] = "1" && [411/410] = "2", "| Cash | Effets |",
+			    [413] = "1" && [512] = "1" && [411/410] = "1", "| Cash | Créances | Effets |",
+			    [413] = "1" && [411/410] = "2" && [70] = "2", "Autres contreparties",
+			    "Autres contreparties"
+			)
+		lineageTag: 89b573c3-a073-4997-9606-fbf3cdc29309
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh Categorie' = ```
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="AN", "Créances clients hors cash",
+			    [70] = "2" && [512] = "2" && [411/410] && [413] = "2", "hors scope",
+			    SE[SchemaEcriture] in {"|5|70|", "|4457|5|70|","|411|5|", "|411|4457|5|", "|410|4457|5|", "|412|4457|5|" , "|413|5|"} , "Encaissement total",
+			    [411/410] = "1" && [70] = "2" && [512] = "2", "Créances clients hors cash", 
+			    [70] = "1" && [512] = "1" , "Encaissement partiel",
+			    [411/410] = "1" && [512] = "1" && [70] = "2", "Encaissement partiel",
+			
+			    [70] = "1" && [411/410] = "1" && [512] = "2", "Chiffre d'affaires hors cash",
+			
+			    [70] = "1" &&  [411/410] = "2" && [512] = "2" , "Chiffre d'affaires hors cash",
+			  
+			
+			
+			    [512] = "1" && [411/410] = "2" && [70] = "2", "hors scope",
+			    "hors scope"
+			)
+			
+			```
+		lineageTag: 72b17ac4-23f1-4aec-a121-221bca752b09
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 4191 =
+			IF(
+			    (SE[SchemaEcriture]) = "",
+			    "AN",
+			    IF(
+			         CONTAINSSTRING(SE[SchemaEcriture], "|4191|") ,
+			        "1",
+			        "2"
+			    )
+			)
+		lineageTag: 90808845-6b15-4fbd-9e16-8eaafee5b098
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CAsh CAT AVANCE' =
+			SWITCH(
+			    TRUE(),
+			    SE[SchemaEcriture] ="", "AN",
+			    [4191] = "2" && [512] = "2" && [411/410] = "2", "Autres contreparties",
+			    [4191] = "1" && [411/410] = "1" && [512] = "2", "CREANCES - AVANCES",
+			    [4191] = "1" && [512] = "1" && [411/410] = "2", "CASH - AVANCES",
+			    [4191] = "1" && [512] = "1" && [411/410] = "1", "CASH - CREANCES - AVANCES",
+			    [4191] = "1" && [411/410] = "2" && [70] = "2", "Autres contreparties",
+			    "Autres contreparties"
+			)
+		lineageTag: c496dc60-6bbd-43d5-89f1-37e24004d61f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SE = calculated
+		mode: import
+		source = DISTINCT('KPI'[SchemaEcriture])
+
+	annotation PBI_Id = 10d131e94eee4e4cb6f3fce2e1915fd9
+

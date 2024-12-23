@@ -1,0 +1,417 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "b0067e67e8c1ad7d6d3e",
+  "displayName": "6.2 CA.sh - Détails",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter4b5aeb0d083bcec37914",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "SE"
+              }
+            },
+            "Property": "CAsh CAT1 V2"
+          }
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Filter7c136497a0347d59888c",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "SE"
+              }
+            },
+            "Property": "CAsh CAT1 V2"
+          }
+        },
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "SE",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "CAsh CAT1 V2"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'hors scope'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'6.2 CA.sh (1).png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "6.2_CA.sh_(1)6885778771418505.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "267L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "d4309f8f5b5c1301b312",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d4309f8f5b5c1301b312",
+      "target": "910827ef5295bc6ce659",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d4309f8f5b5c1301b312",
+      "target": "53468bfb4ec41600a53e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "4a7878a5d310a5224d01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "ec36f17c670812d526c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "4a7878a5d310a5224d01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "ec36f17c670812d526c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "4a7878a5d310a5224d01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "ec36f17c670812d526c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "21866c85d44336d8557a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "21866c85d44336d8557a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "21866c85d44336d8557a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "4a7878a5d310a5224d01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "17f4befc997b020657d1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "21866c85d44336d8557a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "17f4befc997b020657d1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "2496defe4850068a5d34",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "17f4befc997b020657d1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "2496defe4850068a5d34",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "2496defe4850068a5d34",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "17f4befc997b020657d1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "ec36f17c670812d526c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "c2187000104a668c8a87",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c2187000104a668c8a87",
+      "target": "f1a5091cec1a913e7034",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c2187000104a668c8a87",
+      "target": "ec36f17c670812d526c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c2187000104a668c8a87",
+      "target": "72d0c4714235a60c0c52",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "c2187000104a668c8a87",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c2187000104a668c8a87",
+      "target": "4a7878a5d310a5224d01",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "c2187000104a668c8a87",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "c2187000104a668c8a87",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ec36f17c670812d526c0",
+      "target": "a22c4a4270bc0c6021a4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f1a5091cec1a913e7034",
+      "target": "a22c4a4270bc0c6021a4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "21866c85d44336d8557a",
+      "target": "a22c4a4270bc0c6021a4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "17f4befc997b020657d1",
+      "target": "a22c4a4270bc0c6021a4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "4a7878a5d310a5224d01",
+      "target": "a22c4a4270bc0c6021a4",
+      "type": "NoFilter"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.2.0/schema.json",
+  "displayName": "ENDET V2",
+  "name": "Bookmark0105cd0f5c08a654898f",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "73a9785c6aeb864b140b",
+      "2e17689e5abd9331a224",
+      "a26a95e0b06105c350c3",
+      "602a85a0e6d713e2208b",
+      "77bd10a4016eda965d0c",
+      "1017084261baa24ba0b5",
+      "78b239fe15542b4c80d3",
+      "be0995678ba0391d0817",
+      "c29fa9c1eac71b1ca03e",
+      "143a291c749309ae4940",
+      "36983a0c518a68a8e0eb",
+      "53cbcec7a8394385da24",
+      "0430bfe43e984020700c",
+      "ac87797406087a018044",
+      "d7be1d6870a30673e024",
+      "620357287c49e8ba8d3e",
+      "c4d45e34003d360079a2",
+      "8c731bb505830a6c4acc",
+      "1e9b12a298ac2a1aaad7",
+      "72b4c192861531eda50a",
+      "0f87d26c3225c68048c5",
+      "46d84b70108700159080",
+      "74f7423a820e19496680",
+      "d0be2ca1aa10878c80d8",
+      "fce7f73e4ab1ceaac122",
+      "c01769d5dd8630d61e6b",
+      "da0792abbe502961336c",
+      "2146d54d31d39aac005d",
+      "969791b83b73068dc0c1",
+      "d164ab60340320a943b4",
+      "d28cf8d81938389908a1",
+      "dc68e42c254002a5c413",
+      "3250b817e8e59490a290",
+      "d45526cdadbec250be13",
+      "803dcfc2080dc0068964",
+      "4e9ebc7a0ceb12827180",
+      "6e7413ca0847c0a967d3",
+      "851b4083c06a0c4d615b",
+      "be1cd78cc60a08a0bc9c"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection9dc12093bc0c205ce3cc",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filterae9cae229a2457433e3e",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Accounts"
+                }
+              },
+              "Property": "AccountLegalName"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "Filter46301fafa998238532d5",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "AuditorSecurity"
+                }
+              },
+              "Property": "Username"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "ReportSection9dc12093bc0c205ce3cc": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "Filtere5a973f0ed445bb15ba1",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "k",
+                    "Entity": "KPI",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "k"
+                                }
+                              },
+                              "Property": "BaseType"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'GL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "BaseType"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filterea8fc190030dc4c18a6d",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "MarquageBFR"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter087838dfec9739d87061",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "p",
+                    "Entity": "PlanCompteAEF",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "p"
+                                }
+                              },
+                              "Property": "MarquageEndettementNet"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Endettement Net'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "MarquageEndettementNet"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {},
+        "visualContainerGroups": {
+          "d0be2ca1aa10878c80d8": {
+            "isHidden": true,
+            "children": {
+              "6e7413ca0847c0a967d3": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

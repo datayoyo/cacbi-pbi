@@ -1,0 +1,49 @@
+table FieldParam2
+	lineageTag: 224c493c-6bb8-423e-8758-826c3fdea5b6
+
+	column Value
+		lineageTag: 6639fbc7-a408-4988-b570-acc42371fd82
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: Code
+
+		relatedColumnDetails
+			groupByColumn: KeyDC
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		lineageTag: 9e5293a7-4537-4603-a342-056aed35c01d
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: Code
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		formatString: 0
+		lineageTag: 2d19486d-3c48-4b2e-b678-6e42e0769d85
+		summarizeBy: count
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FieldParam2-49e7287f-3eaf-4d00-9ce7-18c39c1564a9 = calculated
+		mode: import
+		source =
+				{
+				    ("Mois", NAMEOF('DimTemps'[MonthShortName]), 0),
+				    ("Jour", NAMEOF('DimTemps'[DayOfYear]), 1),
+				    ("Trimestre", NAMEOF('DimTemps'[FiscalQuarterName]), 2),
+				    ("Etablissement", NAMEOF('KPI'[CodeEtbt]), 3),
+				    ("Code journal", NAMEOF('KPI'[CodeJournal]), 4)
+				}
+
+	annotation PBI_Id = 2f24cad3d8134787822c93ddbf60398b
+

@@ -1,0 +1,56 @@
+table 'FieldParam_measures immos'
+	lineageTag: fc083397-431e-4adb-8aa3-6520d101b6bd
+
+	column Code
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1df87a11-a82a-4b97-9cd0-7b5edf793b5f
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: f55345da-85a9-4bcd-8809-9e45effbd281
+		summarizeBy: none
+		sourceColumn: KeyDC
+		sortByColumn: Code
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 9e0a674c-a559-4baf-a239-aaa295e649d1
+		summarizeBy: none
+		sourceColumn: Value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'FieldParam_measures immos-9f5eeeaf-019f-4644-ae6f-019e817326d1' = m
+		mode: import
+		queryGroup: 'Field Param'
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    #"FieldParam_measures immos1" = public{[Name="FieldParam_measures immos"]}[Data]
+				in
+				    #"FieldParam_measures immos1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

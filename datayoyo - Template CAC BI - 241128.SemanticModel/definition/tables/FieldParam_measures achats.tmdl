@@ -1,0 +1,58 @@
+table 'FieldParam_measures achats'
+	lineageTag: 43caa6f3-efc2-4183-a01c-b537120d7288
+
+	column Code
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f97a2512-e0b3-4608-8edd-294398e2b6a8
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: f250a268-5fc1-484c-ac86-d6093af2d9b4
+		summarizeBy: none
+		sourceColumn: KeyDC
+		sortByColumn: Code
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 1f1ed717-6914-41c1-ada9-ec322fc8ad5a
+		summarizeBy: none
+		sourceColumn: Value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'FieldParam_measures achats-aa68acbb-f95f-455a-b7a7-c06c03ece72f' = m
+		mode: import
+		queryGroup: 'Field Param'
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    #"FieldParam_measures achats1" = public{[Name="FieldParam_measures achats"]}[Data]
+				in
+				    #"FieldParam_measures achats1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

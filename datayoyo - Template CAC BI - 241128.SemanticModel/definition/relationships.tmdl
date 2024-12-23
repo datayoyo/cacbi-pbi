@@ -1,0 +1,83 @@
+relationship b72db5dd-b804-4196-b72f-a1324d73859a
+	fromColumn: KPI.CléDate
+	toColumn: DimTemps.Clé
+
+	annotation PBI_IsFromSource = FS
+
+relationship c85ca719-219c-4129-a153-0cb231aa3df1
+	crossFilteringBehavior: bothDirections
+	fromColumn: KPI.CléPCG
+	toColumn: MappingPCG.Clé
+
+	annotation PBI_IsFromSource = FS
+
+relationship f55a096f-d0f6-4814-8351-ff0a46640c88
+	fromColumn: KPI.AN
+	toColumn: ParamAN.AN
+
+	annotation PBI_IsFromSource = FS
+
+relationship 62a755ea-083f-451a-a1fb-b0634c03bb8b
+	fromColumn: KPI.DC
+	toColumn: ParamDC.D/C
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4d000095-b48f-4dac-9d5e-b138356f52da
+	fromColumn: KPI.AccountNumber
+	toColumn: Parametrage.AccountNumber
+
+	annotation PBI_IsFromSource = FS
+
+relationship 46dc147a-4932-4aae-a8be-3939bd3de140
+	crossFilteringBehavior: bothDirections
+	fromColumn: Parametrage.AccountNumber
+	toColumn: Accounts.AccountNumber
+
+	annotation PBI_IsFromSource = FS
+
+relationship fa2c1de4-9f73-4c7f-9c36-b5e07a253cf5
+	crossFilteringBehavior: bothDirections
+	fromColumn: MappingKPI.LiasseCode
+	toColumn: PlanCompteAEF.LiasseCode
+
+relationship 591f3355-febc-47dd-9edd-3b34e9dd8ffa
+	fromColumn: MappingPCG.Code
+	toColumn: PlanCompteAEF.LiasseCode
+
+relationship e26c81ff-bd32-4c54-9488-5e3e8731043e
+	fromColumn: KPI.Compte6
+	toColumn: Compte.Racine6
+
+relationship d32b37ea-f83a-cf61-70ad-451e2c386a61
+	fromColumn: KPI.SchemaEcriture
+	toColumn: SE.SchemaEcriture
+
+relationship dfd3d495-111b-ac90-cd26-2dbdead6633f
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Compte.'CAsh detailed 2'
+	toColumn: 'CAshCompte - Creances'.'CAsh detailed 2'
+
+relationship 9b36167c-86c3-faea-2d90-b993b09391cb
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'CAshCompte - CA'.'CAsh detailed 2'
+	toColumn: Compte.'CAsh detailed 2'
+
+relationship f2c89851-f250-d859-c58a-2461631698e1
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'CAshCompte - Effets'.'CAsh detailed 2'
+	toColumn: Compte.'CAsh detailed 2'
+
+relationship ceeca69f-e107-0af8-3cbd-7fd7b2a97456
+	fromColumn: Compte.'CAsh detailed 2'
+	toColumn: 'CAshCompte - cash'.'CAsh detailed 2'
+
+relationship 121e6c45-1214-7be7-0ebc-722a67232433
+	fromColumn: Compte.Racine5
+	toColumn: 'Mapping 2022-06'.Racine5
+

@@ -1,0 +1,54 @@
+table ParamAN
+	lineageTag: fb068f58-1d66-49df-9d94-86dc638a2c7e
+
+	column 'A/N - Bridge'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: 59091474-b500-4e0b-ad2c-4244ea343d37
+		summarizeBy: none
+		sourceColumn: A/N - Bridge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AN
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: fce9d557-4a1c-465f-9965-b37e53cd67cf
+		summarizeBy: none
+		sourceColumn: AN
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AN - O/N'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: 5fd4c6a9-4a18-4504-ac75-5374348d7a01
+		summarizeBy: none
+		sourceColumn: AN - O/N
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ParamAN-d1b7c06f-e739-401b-a7c1-68acd989f772 = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    ParamAN1 = public{[Name="ParamAN"]}[Data]
+				in
+				    ParamAN1
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

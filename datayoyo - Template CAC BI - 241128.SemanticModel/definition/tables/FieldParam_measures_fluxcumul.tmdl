@@ -1,0 +1,56 @@
+table FieldParam_measures_fluxcumul
+	lineageTag: 840597e7-7cce-4c7f-873a-b6ac6b85687e
+
+	column Code
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6bb6cdbe-afd3-4986-ae67-feb48c38bd12
+		summarizeBy: count
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column KeyDC
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: d98735b0-9733-4093-937b-a5ab79aa8a5d
+		summarizeBy: none
+		sourceColumn: KeyDC
+		sortByColumn: Code
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3f302a7d-1fe1-488c-8775-61be26c5d95f
+		summarizeBy: none
+		sourceColumn: Value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FieldParam_measures_fluxcumul-30a77909-ed4c-4f3d-bf0d-2dbce11b0053 = m
+		mode: import
+		queryGroup: 'Field Param'
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    FieldParam_measures_fluxcumul1 = public{[Name="FieldParam_measures_fluxcumul"]}[Data]
+				in
+				    FieldParam_measures_fluxcumul1
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

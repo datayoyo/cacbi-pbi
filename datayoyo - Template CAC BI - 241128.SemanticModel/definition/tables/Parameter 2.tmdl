@@ -1,0 +1,50 @@
+table 'Parameter 2'
+	lineageTag: 904b4bdb-a1a3-4c97-b4d5-84c0d8f74fef
+
+	column Parameter
+		lineageTag: a2092329-da84-4505-a397-58cd450b914f
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		lineageTag: 08295c62-23b4-4b56-a673-f01bd6fb6b78
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		formatString: 0
+		lineageTag: 3afd27cf-bb37-41d7-a978-6fe199417dee
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Parameter 2-3dcb5612-3705-4781-ba3a-0fee181f2c00' = calculated
+		mode: import
+		source =
+				{
+				    ("Besoin en fonds de roulement", NAMEOF('PlanCompteAEF'[SousCategorieBFR]), 1),
+				    ("Marge", NAMEOF('PlanCompteAEF'[SousCategorieMarge]), 3),
+				    ("Résultat d'exploitation", NAMEOF('PlanCompteAEF'[CategorieREX]), 4),
+				    ("CategorieMarge", NAMEOF('PlanCompteAEF'[CategorieMarge]), 2),
+				    ("Endettement Net", NAMEOF('PlanCompteAEF'[CategorieEndettementNet]), 5),
+				    ("CategorieBFR", NAMEOF('PlanCompteAEF'[CategorieBFR]), 0)
+				}
+
+	annotation PBI_Id = 6ebd02e2080d43da96ee88de504d21c3
+

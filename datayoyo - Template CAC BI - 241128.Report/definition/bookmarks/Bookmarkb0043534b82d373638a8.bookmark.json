@@ -1,0 +1,168 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.2.0/schema.json",
+  "displayName": "JE V2",
+  "name": "Bookmarkb0043534b82d373638a8",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "47934c006eee9d53bd6a",
+      "3adeff91d1e2b4bc2568",
+      "6decd1a364ca0b1509c8",
+      "2e1472425c0806be51be",
+      "6702608c1037992de2d1",
+      "fd395f9143da9747bb1b",
+      "1d14c4d6149c100dd639",
+      "086530557c441b4646d5",
+      "2f08b2630c0dc1802b80",
+      "ac29cd28b574c1b445d2",
+      "904631169fbca15c6c8d",
+      "3f741afad8419c3fc8ba",
+      "f16fb47ea500410fe01e",
+      "14f35ce86aa618a20c47",
+      "c289d0236afbe469d463",
+      "ce8925bcc825522afa53",
+      "04bfbcde7164c4941d75",
+      "0a50af15b75ac0c01510",
+      "4118f0b686e09db6b557",
+      "688523b0a32e42a94bc0",
+      "a2c7830e47040b21edcb",
+      "11f0816821751c4c886e",
+      "364711e06ea1ca0b4ac6",
+      "b22e04220e5b3406c8e0",
+      "6c1e75b830bed23c0ee1",
+      "13ff65d7edccec089e86",
+      "2aac149871dbe5b66e80",
+      "8b2e684d6ead242008c3",
+      "664ee9e21490a3050620",
+      "62c82307c050e2c4a430",
+      "9539b7d3a553e998539d",
+      "e2fb098727d43956b59e",
+      "2a2eaebbddc4799e0052"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectionda622a7c09c09c139983",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filterae9cae229a2457433e3e",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Accounts"
+                }
+              },
+              "Property": "AccountLegalName"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "Filter46301fafa998238532d5",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "AuditorSecurity"
+                }
+              },
+              "Property": "Username"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "ReportSectionda622a7c09c09c139983": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "Filter2bc7d12ecaad3deb67a0",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "k",
+                    "Entity": "KPI",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "k"
+                                }
+                              },
+                              "Property": "BaseType"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'GL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "BaseType"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {}
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+table CategoriesTVA
+	lineageTag: 3cca7fec-c97a-4e8f-8bf1-a6ab382c54f3
+
+	column Catégorie
+		dataType: string
+		lineageTag: 2076eb99-d423-4593-8d13-5d4b85154cd0
+		summarizeBy: none
+		sourceColumn: Catégorie
+		sortByColumn: RankingTVA
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RankingTVA
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d9c1e2b-dfc0-40f0-be8f-87f2d568e10f
+		summarizeBy: sum
+		sourceColumn: RankingTVA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CategoriesTVA-f3207296-9acc-4235-b30c-05d5f19c4bfc = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WCkksrVDIyy/KTcxRsFIwMlBQVdJRMlSK1YFKZeaVpBblHl6ZkpmYWZQKVGIIUWKEUFIElC3NLAHKmeqYgiWNEZIFiUUlmcmlOZmpRSDzdQzBCkwQCqoOryzKB0oZgMRNweKOpSVFqcVArplSbCwA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Catégorie = _t, RankingTVA = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Catégorie", type text}, {"RankingTVA", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,267 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.2.0/schema.json",
+  "displayName": "REX V2",
+  "name": "Bookmark28996add574f3cfb233d",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "44a5640b07e00bc40d75",
+      "176342b01e652821542c",
+      "a5bc6f566cd78a2343d6",
+      "e3ec4ded71706b501874",
+      "09b1c7f5a8898a7565aa",
+      "43d575e7d16634324959",
+      "fda7096b6005a89ba7b6",
+      "8f5d17a8b37ba1a0db35",
+      "64c2102100cb70091873",
+      "01b401ff368610040d92",
+      "b13a02514dba1dd18032",
+      "23d2c24660683341b9b9",
+      "fa0babaa8504ab201778",
+      "c0d0914121e7c0bbce6c",
+      "4c6179760d2846c0830b",
+      "137ceb50125415505204",
+      "fc1e0a45ce72c001ee25",
+      "367db0467a0a3cd045e8",
+      "e812e3abe4d8e9c36203",
+      "00d5eac08648e15e3ec0",
+      "52ff6fe21651ee3348c0",
+      "64c8c438b759d57ca4c2",
+      "560d285a1d414345d8c8",
+      "92b3e203ae71609e1a19",
+      "18391dd00c60179c1eae",
+      "fc69399c9b25ed6c2a5e",
+      "38db00cfa4528458dc24",
+      "2fa0999db1720dded70a",
+      "cb943b51014d8279331e",
+      "167647d3ae4ee5eac2c2",
+      "ee3f8d541da7d6a10a5c",
+      "0a75c3e015b8020697de",
+      "d37863439e3391e6b04d",
+      "1b9915365d4712856109",
+      "8bdf57fb65eaccb05ab6",
+      "3e766bedac6ed8abb504",
+      "200f364c527b0e40e5de",
+      "344dac6ec5b9d2e57074"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection4bd74333ac00a470099c",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filterae9cae229a2457433e3e",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Accounts"
+                }
+              },
+              "Property": "AccountLegalName"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "Filter46301fafa998238532d5",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "AuditorSecurity"
+                }
+              },
+              "Property": "Username"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "ReportSection4bd74333ac00a470099c": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "Filtere5a973f0ed445bb15ba1",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "k",
+                    "Entity": "KPI",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "k"
+                                }
+                              },
+                              "Property": "BaseType"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'GL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "BaseType"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filterea8fc190030dc4c18a6d",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "MarquageBFR"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter087838dfec9739d87061",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "MarquageEndettementNet"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filterb9452efe0508505ad1d1",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "p",
+                    "Entity": "PlanCompteAEF",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "p"
+                                }
+                              },
+                              "Property": "MarquageREX"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'REX'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "MarquageREX"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {},
+        "visualContainerGroups": {
+          "92b3e203ae71609e1a19": {
+            "isHidden": true,
+            "children": {
+              "3e766bedac6ed8abb504": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.2.0/schema.json",
+  "displayName": "STOCKS V2",
+  "name": "Bookmark089d55140c14011ad528",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "7c27a3aa65d7cba25ccb",
+      "fd426efbc9547bc08d6b",
+      "1a15b72db9ea06aa0d05",
+      "6545e87dd2801721bc26",
+      "3c2de3705c370a87c760",
+      "c7b284594ad03004695d",
+      "3cf3d5c423b92004307b",
+      "3f2d1f5fae99e9d84bb7",
+      "321e04cf94a3c571cd93",
+      "775c1d8e8bbcca31d0bb",
+      "2bae361323c034badb50",
+      "832645ca781102a50504",
+      "8912f418839992798011",
+      "a9161860d7780be87554",
+      "6bfe06cdbc0728191743",
+      "555ef8ca502d10c24bec",
+      "7ec8f856c6340d4beb65",
+      "848ac6ea187234342de9",
+      "1bda92ef3099d8e4c67c",
+      "9aadc7224119b734790e",
+      "a9fb1e5054316ca625d3",
+      "5fe3e91798125a4453c3",
+      "a70a72a85646a6604c42",
+      "0561e8166ae98bdba224",
+      "dcd273226c01e0e7da0b",
+      "32c6973aa48380d01059",
+      "73ca5647d52272a77174",
+      "361324e0d1ba5666430a",
+      "f470ce553a523b2532c6",
+      "1c87e1a56ae3467b7c00",
+      "7ba7a626b000400e2dc2",
+      "eb171d46d0a4091e255b",
+      "1df835255e01896a56a8",
+      "f89f09f6ccc916909a10",
+      "a672e322330e301ec33c",
+      "3b171bea65b0a935e32d",
+      "4a8c7f00d5a8ab5d792a",
+      "1503191c98223b07ee65",
+      "978eff213d5d52e770c4",
+      "12a31870beb3b6613037",
+      "8c0c63e2c0d9c5968259",
+      "5e475754d3726ee4aec6",
+      "103b74fbd2bdcb07c997",
+      "65861a586304e2896ebd",
+      "778ee978988190e11b5c",
+      "7f7d0d42ecd268323e1d",
+      "7dca32cc2a9052822d6d",
+      "b047ae360972a80a51ae",
+      "0d96de29b3bae4d104a5",
+      "e4a53353578c35f3b7a9",
+      "2acdf8ea08e10831072b",
+      "4ba8502b77330056d217",
+      "eb4519c1d139b588a9e2",
+      "a5ebf5341c30304b05eb",
+      "c6b1db8f6323ea4107bc",
+      "4c977226a4cdab71a75e",
+      "1155b95e74350a430164",
+      "e2994ad3e5a0468d00b4",
+      "14e8b4715b483a492e75",
+      "3f19b863423d5780adbd",
+      "8ca6bd634d30b4103040",
+      "d46debd02dcb424a06aa",
+      "d4ffab62534126251720",
+      "eb5aa250412789052d64",
+      "007898f112a0e547bd42",
+      "f5df02249070015e3e4a",
+      "f1c9811282ad6716e384",
+      "a05ea0508752bdc7edb5",
+      "4152db2eb9a30ca49281",
+      "77d56375d09946701737",
+      "9401b2175ad887a0dd98",
+      "25e23024355350707596",
+      "39cebba5795bd243bc6c",
+      "6f805566ca8511119b6e",
+      "35b82bce033178b3c34a",
+      "f0b8990640ce7cbb0224",
+      "78217a8f671cc863bec6",
+      "580d6c9850d9a8002a17"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectionafce564ae51e5c9593a7",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filterae9cae229a2457433e3e",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Accounts"
+                }
+              },
+              "Property": "AccountLegalName"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "Filter46301fafa998238532d5",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "AuditorSecurity"
+                }
+              },
+              "Property": "Username"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "ReportSectionafce564ae51e5c9593a7": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "Filtere5a973f0ed445bb15ba1",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "k",
+                    "Entity": "KPI",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "k"
+                                }
+                              },
+                              "Property": "BaseType"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'GL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "BaseType"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter197c999b9609d0c53dce",
+              "type": "Advanced",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "SliderT6",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "Code"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "0L"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SliderT6"
+                    }
+                  },
+                  "Property": "Code"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter341a3dc00ec6cb077dba",
+              "type": "Advanced",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "SliderT7",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "Code"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "0L"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SliderT7"
+                    }
+                  },
+                  "Property": "Code"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter5d69118dd07a000e4323",
+              "type": "Advanced",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "SliderT1",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "Code"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "0M"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SliderT1"
+                    }
+                  },
+                  "Property": "Code"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filterae53ce074a0a6e08c929",
+              "type": "Advanced",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "SliderT2",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "Code"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "0M"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SliderT2"
+                    }
+                  },
+                  "Property": "Code"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {},
+        "visualContainerGroups": {
+          "eb5aa250412789052d64": {
+            "isHidden": true,
+            "children": {
+              "f0b8990640ce7cbb0224": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
