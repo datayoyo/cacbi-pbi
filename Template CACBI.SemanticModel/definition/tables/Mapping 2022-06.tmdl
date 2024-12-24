@@ -1,0 +1,111 @@
+table 'Mapping 2022-06'
+	excludeFromModelRefresh
+	lineageTag: ad5e5601-9bdc-4b7b-a52f-834ccad18845
+
+	column Racine3
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e97e689-a6a7-4868-b723-8f7f35297f18
+		summarizeBy: none
+		sourceColumn: Racine3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine4
+		dataType: int64
+		formatString: 0
+		lineageTag: 35a8b8e0-0523-452e-a6d4-ef1e0d731044
+		summarizeBy: none
+		sourceColumn: Racine4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Racine5
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e95dc3a-e363-4d61-a5b4-daf8f18566fe
+		summarizeBy: none
+		sourceColumn: Racine5
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine3 OLD'
+		dataType: string
+		lineageTag: 0d8f4b2f-d785-4ef5-bb70-46a16d06f586
+		summarizeBy: none
+		sourceColumn: Racine3 OLD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine3 NEW'
+		dataType: string
+		lineageTag: e495d45f-defc-4233-a802-aca7c2578a4f
+		summarizeBy: none
+		sourceColumn: Racine3 NEW
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine4 OLD'
+		dataType: string
+		lineageTag: e036e0fd-997a-4b19-839c-607ea84319ec
+		summarizeBy: none
+		sourceColumn: Racine4 OLD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine4 NEW'
+		dataType: string
+		lineageTag: 89d3019c-2420-4077-a324-d7074a4299ef
+		summarizeBy: none
+		sourceColumn: Racine4 NEW
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine5 OLD'
+		dataType: string
+		lineageTag: 5e99a8c1-4fca-4832-989a-c87e0c7cfebe
+		summarizeBy: none
+		sourceColumn: Racine5 OLD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Racine5 NEW'
+		dataType: string
+		lineageTag: bc3e49c1-ab2a-4801-ad72-43ec0a4a3697
+		summarizeBy: none
+		sourceColumn: Racine5 NEW
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commentaires
+		dataType: string
+		lineageTag: 91fe1fab-b9a8-498f-88d1-afebd2d5a46b
+		summarizeBy: none
+		sourceColumn: Commentaires
+
+		annotation SummarizationSetBy = Automatic
+
+	column Detail
+		dataType: string
+		lineageTag: 828585c9-6967-4d44-8f97-2a6b38611138
+		summarizeBy: none
+		sourceColumn: Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Mapping 2022-06' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\hajar\OneDrive - DataYoyo\Réseau partagé DY\06. CAC BI - développement\05. Dèv nouvelles fonctionnalités\23. Règlement 06-2022\Table de passage PCG 2022-06.xlsx"), null, true),
+				    #"Mapping 2022-06_Sheet" = Source{[Item="Mapping 2022-06",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Mapping 2022-06_Sheet", [PromoteAllScalars=true]),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Promoted Headers",{"Racine3", "Racine4", "Racine5", "Racine3 OLD", "Racine3 NEW", "Racine4 OLD", "Racine4 NEW", "Racine5 OLD", "Racine5 NEW", "Commentaires", "Detail"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Other Columns",{{"Racine3", Int64.Type}, {"Racine4", Int64.Type}, {"Racine5", Int64.Type}, {"Racine3 OLD", type text}, {"Racine3 NEW", type text}, {"Racine4 OLD", type text}, {"Racine4 NEW", type any},  {"Racine5 OLD", type text}, {"Racine5 NEW", type text},{"Commentaires", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

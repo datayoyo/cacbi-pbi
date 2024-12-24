@@ -1,0 +1,75 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Field Param'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup Sliders
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup CAsh
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.138.1203.0 (24.11)
+
+annotation PBI_QueryOrder = ["Accounts","Choix du test","Choix du test 1","Choix du test_frs","DimTemps","FieldParam_measures achats","FieldParam_measures immos","FieldParam_measures_fluxcumul","FieldParam_measures_fluxcumul inv","FieldParam_table","Formes juridiques","KPI","MappingPCG","Mesures","ParamAN","ParamDC","Parametrage","SliderT1","SliderT2","SliderT3","SliderT4","SliderT5","SliderT6","SliderT7","SliderT8","SliderT9","MappingKPI","PlanCompteAEF","CategoriesTVA","TableLettrage","Compte","MappingCS","Ranking CS","CAshCompte - Creances","CAshCompte - Effets","CAshCompte - CA","CAshCompte - cash","Mapping 2022-06","ClientID"]
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Parameter
+ref table Accounts
+ref table 'Choix du test'
+ref table 'Choix du test 1'
+ref table 'Choix du test_frs'
+ref table DimTemps
+ref table 'FieldParam_measures achats'
+ref table 'FieldParam_measures immos'
+ref table FieldParam_measures_fluxcumul
+ref table 'FieldParam_measures_fluxcumul inv'
+ref table FieldParam_table
+ref table 'Formes juridiques'
+ref table KPI
+ref table MappingPCG
+ref table Mesures
+ref table ParamAN
+ref table ParamDC
+ref table Parametrage
+ref table SliderT1
+ref table SliderT2
+ref table SliderT3
+ref table SliderT4
+ref table SliderT5
+ref table SliderT6
+ref table SliderT7
+ref table SliderT8
+ref table SliderT9
+ref table FieldParam_measures
+ref table FieldParam2
+ref table 'Parameter 2'
+ref table MappingKPI
+ref table PlanCompteAEF
+ref table CategoriesTVA
+ref table TableLettrage
+ref table Compte
+ref table 'Parameter 3'
+ref table SE
+ref table 'CAshCompte - Creances'
+ref table 'CAshCompte - Effets'
+ref table 'CAshCompte - CA'
+ref table 'CAshCompte - cash'
+ref table 'Mapping 2022-06'
+
+ref cultureInfo en-US
+

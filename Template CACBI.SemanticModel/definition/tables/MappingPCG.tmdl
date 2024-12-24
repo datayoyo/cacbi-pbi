@@ -1,0 +1,83 @@
+table MappingPCG
+	lineageTag: aafa16b5-ccae-400f-a788-e6b74a1a13b4
+
+	column Clé
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: ed717fa6-a92c-4350-b815-dac48fe0e2d0
+		summarizeBy: none
+		sourceColumn: Clé
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3298bc82-bde3-40f2-a0a7-52acfc1f1cb3
+		summarizeBy: none
+		sourceColumn: Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CS_STANDARD
+		dataType: string
+		lineageTag: a178f1dc-b13a-4dce-881e-176b394efe8f
+		summarizeBy: none
+		sourceColumn: CS_STANDARD
+		sortByColumn: Rank
+
+		changedProperty = IsHidden
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column AP_STANDARD
+		dataType: string
+		lineageTag: b9a59af3-0ee2-436b-89e9-5eefeb8d7f58
+		summarizeBy: none
+		sourceColumn: AP_STANDARD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rank
+		dataType: int64
+		formatString: 0
+		lineageTag: bfaec528-1f75-410a-ac77-0f514c060af0
+		summarizeBy: sum
+		sourceColumn: Rank
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MappingPCG-f1fcb505-7461-4b36-9127-95cfeb6c061b = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    MappingPCG1 = public{[Name="MappingPCG"]}[Data],
+				    #"Inserted First Characters" = Table.AddColumn(MappingPCG1, "First Characters", each Text.Start([Clé], 6), type text),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Inserted First Characters",{{"First Characters", Int64.Type}}),
+				    #"Merged Queries" = Table.NestedJoin(#"Changed Type", {"First Characters"}, MappingCS, {"Compte"}, "MappingCS", JoinKind.LeftOuter),
+				    #"Expanded MappingCS" = Table.ExpandTableColumn(#"Merged Queries", "MappingCS", {"CS_STANDARD", "AP_STANDARD", "Rank"}, {"CS_STANDARD", "AP_STANDARD", "Rank"}),
+				    #"Sorted Rows" = Table.Sort(#"Expanded MappingCS",{{"First Characters", Order.Ascending}}),
+				    #"Filled Down" = Table.FillDown(#"Sorted Rows",{"CS_STANDARD", "AP_STANDARD", "Rank"}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Filled Down",{"First Characters"})
+				in
+				    #"Removed Columns"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

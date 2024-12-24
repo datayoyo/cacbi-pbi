@@ -1,0 +1,31 @@
+table 'Formes juridiques'
+	lineageTag: d53085e6-8399-4348-9e2c-2008b6714b5c
+
+	column 'Formes juridiques'
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(max)
+		lineageTag: c07d21e2-6c07-433d-88cb-4bc50b220d9a
+		summarizeBy: none
+		sourceColumn: Formes juridiques
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Formes juridiques-bd179f7e-3619-4107-aacb-9d846f225b86' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
+				    public = Source{[Schema="public"]}[Data],
+				    #"Formes juridiques1" = public{[Name="Formes juridiques"]}[Data]
+				in
+				    #"Formes juridiques1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
