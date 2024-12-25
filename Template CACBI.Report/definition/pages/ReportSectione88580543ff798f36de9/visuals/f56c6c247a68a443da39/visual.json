@@ -1817,20 +1817,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "Filter141dd5e537e49bb2b616",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "MappingKPI"
-              }
-            },
-            "Property": "Attribute"
-          }
-        },
-        "howCreated": "User"
-      },
-      {
         "name": "Filtera421d06a61ea8000309d",
         "field": {
           "Column": {

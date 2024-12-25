@@ -122,56 +122,6 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "1.1_Qualification_-_Champs_imp5580641543983182.png",
-          "path": "1.1_Qualification_-_Champs_imp5580641543983182.png",
-          "type": "Image"
-        },
-        {
-          "name": "1.2_Qualification_-_RAN7869597178850536.png",
-          "path": "1.2_Qualification_-_RAN7869597178850536.png",
-          "type": "Image"
-        },
-        {
-          "name": "1.6_Qualification_-_Contr_le_d2639500018330825.png",
-          "path": "1.6_Qualification_-_Contr_le_d2639500018330825.png",
-          "type": "Image"
-        },
-        {
-          "name": "1.7_Qualification_-_Mapping_PC7893962682138274.png",
-          "path": "1.7_Qualification_-_Mapping_PC7893962682138274.png",
-          "type": "Image"
-        },
-        {
-          "name": "7.2_Immo._Tab._de_var.5359067630401921.png",
-          "path": "7.2_Immo._Tab._de_var.5359067630401921.png",
-          "type": "Image"
-        },
-        {
-          "name": "7.6_Immo._PV_de_cession4096592851991254.png",
-          "path": "7.6_Immo._PV_de_cession4096592851991254.png",
-          "type": "Image"
-        },
-        {
-          "name": "10.4_Stocks_-_DIO_PF452358725619457.png",
-          "path": "10.4_Stocks_-_DIO_PF452358725619457.png",
-          "type": "Image"
-        },
-        {
-          "name": "10.5_Stocks_-_DIO_MP48812917839870207.png",
-          "path": "10.5_Stocks_-_DIO_MP48812917839870207.png",
-          "type": "Image"
-        },
-        {
-          "name": "11.5_Clients_-_DSO9628307608009947.png",
-          "path": "11.5_Clients_-_DSO9628307608009947.png",
-          "type": "Image"
-        },
-        {
-          "name": "16.5_Frs_-_DSO1460975417399768.png",
-          "path": "16.5_Frs_-_DSO1460975417399768.png",
-          "type": "Image"
-        },
-        {
           "name": "1.1_Qualification_-_Champs_imp562666892157248.png",
           "path": "1.1_Qualification_-_Champs_imp562666892157248.png",
           "type": "Image"
@@ -422,23 +372,8 @@
           "type": "Image"
         },
         {
-          "name": "Voir_les_calculs4297485712403004.png",
-          "path": "Voir_les_calculs4297485712403004.png",
-          "type": "Image"
-        },
-        {
           "name": "0._Page_de_garde6942213876165206.png",
           "path": "0._Page_de_garde6942213876165206.png",
-          "type": "Image"
-        },
-        {
-          "name": "6.1_CA.sh6412224056342537.png",
-          "path": "6.1_CA.sh6412224056342537.png",
-          "type": "Image"
-        },
-        {
-          "name": "1.2_Qualification_-_Qualit__-_10964714906606421.png",
-          "path": "1.2_Qualification_-_Qualit__-_10964714906606421.png",
           "type": "Image"
         },
         {
@@ -452,33 +387,13 @@
           "type": "Image"
         },
         {
-          "name": "3.4_Cash_-_BFR6806468089629332.png",
-          "path": "3.4_Cash_-_BFR6806468089629332.png",
-          "type": "Image"
-        },
-        {
           "name": "11.6_Clients_-_Balance_ag_e_(15515776378328618.png",
           "path": "11.6_Clients_-_Balance_ag_e_(15515776378328618.png",
           "type": "Image"
         },
         {
-          "name": "11.2_Clients_-_CA_par_clients18641976039623764.png",
-          "path": "11.2_Clients_-_CA_par_clients18641976039623764.png",
-          "type": "Image"
-        },
-        {
-          "name": "16.2_Frs_-_Achats_par_auxiliai858440251502985.png",
-          "path": "16.2_Frs_-_Achats_par_auxiliai858440251502985.png",
-          "type": "Image"
-        },
-        {
           "name": "10.4_Stocks_DIO03024323867212564.png",
           "path": "10.4_Stocks_DIO03024323867212564.png",
-          "type": "Image"
-        },
-        {
-          "name": "7.3_Immo._Amort._et_d_p.451836800799416.png",
-          "path": "7.3_Immo._Amort._et_d_p.451836800799416.png",
           "type": "Image"
         },
         {
@@ -499,11 +414,6 @@
         {
           "name": "6.3_CA.sh46760426510312514.png",
           "path": "6.3_CA.sh46760426510312514.png",
-          "type": "Image"
-        },
-        {
-          "name": "3.1_Cash_-_TFT8287647461727501.png",
-          "path": "3.1_Cash_-_TFT8287647461727501.png",
           "type": "Image"
         },
         {
@@ -670,6 +580,91 @@
           "name": "5.2.3_ANC_2014-03_-_Rappel9028134887050612.png",
           "path": "5.2.3_ANC_2014-03_-_Rappel9028134887050612.png",
           "type": "Image"
+        },
+        {
+          "name": "TP_TP_1.1_Qualification_-_Cham6181933244048494.png",
+          "path": "TP_TP_1.1_Qualification_-_Cham6181933244048494.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_1.2_Qualification_-_RAN2789511571045631.png",
+          "path": "TP_1.2_Qualification_-_RAN2789511571045631.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_1.2_Qualification_-_Qualit_48138422922449564.png",
+          "path": "TP_1.2_Qualification_-_Qualit_48138422922449564.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_1.6_Qualification_-_Contr_l6764007272746027.png",
+          "path": "TP_1.6_Qualification_-_Contr_l6764007272746027.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_1.7_Qualification_-_Mapping09792106409722301.png",
+          "path": "TP_1.7_Qualification_-_Mapping09792106409722301.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_3.1_Cash_-_TFT07485802444420098.png",
+          "path": "TP_3.1_Cash_-_TFT07485802444420098.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_3.4_Cash_-_BFR25781323396517686.png",
+          "path": "TP_3.4_Cash_-_BFR25781323396517686.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_7.2_Immo._Tab._de_var.10875575829158879.png",
+          "path": "TP_7.2_Immo._Tab._de_var.10875575829158879.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_7.3_Immo._Amort._et_d_p.37781445425681537.png",
+          "path": "TP_7.3_Immo._Amort._et_d_p.37781445425681537.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_7.6_Immo._PV_de_cession750823973470601.png",
+          "path": "TP_7.6_Immo._PV_de_cession750823973470601.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_Voir_les_calculs6127069285002202.png",
+          "path": "TP_Voir_les_calculs6127069285002202.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_10.4_Stocks_-_DIO_PF36678045538993875.png",
+          "path": "TP_10.4_Stocks_-_DIO_PF36678045538993875.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_10.5_Stocks_-_DIO_MP5023215165851498.png",
+          "path": "TP_10.5_Stocks_-_DIO_MP5023215165851498.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_11.2_Clients_-_CA_par_clien8150388265564288.png",
+          "path": "TP_11.2_Clients_-_CA_par_clien8150388265564288.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_11.5_Clients_-_DSO2993190266972041.png",
+          "path": "TP_11.5_Clients_-_DSO2993190266972041.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_16.2_Frs_-_Achats_par_auxil37683927406565076.png",
+          "path": "TP_16.2_Frs_-_Achats_par_auxil37683927406565076.png",
+          "type": "Image"
+        },
+        {
+          "name": "TP_16.5_Frs_-_DSO040014907078284256.png",
+          "path": "TP_16.5_Frs_-_DSO040014907078284256.png",
+          "type": "Image"
         }
       ]
     },
@@ -681,17 +676,6 @@
           "name": "CY18SU07",
           "path": "BaseThemes/CY18SU07.json",
           "type": "BaseTheme"
-        }
-      ]
-    },
-    {
-      "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
-      "type": "CustomVisual",
-      "items": [
-        {
-          "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
-          "path": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
-          "type": "CustomVisualMetadata"
         }
       ]
     }

@@ -873,7 +873,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Comptes auxiliaires client": {
+			          "Clients créditeurs": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -883,7 +883,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Clients créditeurs": {
+			          "Comptes auxiliaires client": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3330,7 +3330,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Débit": {
+			          "Débit N": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3340,7 +3340,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Débit N": {
+			          "Débit": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4506,7 +4506,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Variation des amortissements au bilan": {
+			          "Var. Bilan": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4516,7 +4516,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Var. Bilan": {
+			          "Variation des amortissements au bilan": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4768,7 +4768,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Montant des amortissements au P&L": {
+			          "Solde - P&L": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4778,7 +4778,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Solde - P&L": {
+			          "Montant des amortissements au P&L": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4904,7 +4904,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "VNC des immobilisations sorties - Bilan": {
+			          "VNC - Bilan": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4914,7 +4914,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "VNC - Bilan": {
+			          "VNC des immobilisations sorties - Bilan": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5040,7 +5040,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "VNC des immobilisations sorties - P&L": {
+			          "VNC - P&L": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5050,7 +5050,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "VNC - P&L": {
+			          "VNC des immobilisations sorties - P&L": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -32639,26 +32639,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Ventes TTC N-1": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Ventes TTC N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Soldes des ventes TTC": {
 			            "State": "Suggested",
 			            "Source": {
@@ -32669,7 +32649,27 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Ventes TTC N-1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Solde des ventes TTC": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ventes TTC N": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -32777,7 +32777,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Achats TTC N-1": {
+			          "Soldes des achats TTC": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -32787,7 +32787,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Soldes des achats TTC": {
+			          "Achats TTC N-1": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -34143,7 +34143,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Achats HT N": {
+			          "Solde des achats": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -34153,7 +34153,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Solde des achats": {
+			          "Achats HT N": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
