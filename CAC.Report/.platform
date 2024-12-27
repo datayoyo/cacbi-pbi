@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "SemanticModel",
-    "displayName": "Template CACBI"
+    "type": "Report",
+    "displayName": "CAC"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "70a36f0e-a349-4858-a119-49e9ba6ebce1"
+    "logicalId": "150ba815-4fe7-4491-b3ed-1dc81c02ccd2"
   }
 }
