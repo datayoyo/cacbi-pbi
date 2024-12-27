@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'0. Page de garde.png'"
+                    "Value": "'0_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "0._Page_de_garde6942213876165206.png"
+                    "ItemName": "0_06953128327355063.svg"
                   }
                 }
               },

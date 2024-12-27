@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'3.4 Cash - BFR (1).png'"
+                    "Value": "'3_4_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "3.4_Cash_-_BFR_(1)9757571191721446.png"
+                    "ItemName": "3_4_5554711447550014.svg"
                   }
                 }
               },

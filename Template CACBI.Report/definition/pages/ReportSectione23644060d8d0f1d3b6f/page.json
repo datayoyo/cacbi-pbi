@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'8.3 Immo fi. - Bouclage amort et dépré.png'"
+                    "Value": "'8_3_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "8.3_Immo_fi._-_Bouclage_amort_5158444862879625.png"
+                    "ItemName": "8_3_18115624726322221.svg"
                   }
                 }
               },

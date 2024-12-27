@@ -71,7 +71,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'8.2 Immo. fi.png'"
+                    "Value": "'8_2_.svg'"
                   }
                 }
               },
@@ -80,14 +80,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "8.2_Immo._fi8167545670698106.png"
+                    "ItemName": "8_2_921988813442765.svg"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "'Normal'"
                   }
                 }
               }

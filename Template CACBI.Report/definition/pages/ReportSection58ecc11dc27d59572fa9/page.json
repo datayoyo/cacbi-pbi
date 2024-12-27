@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.1 Qualification - Champs importés.png'"
+                    "Value": "'1_1_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.1_Qualification_-_Champs_imp562666892157248.png"
+                    "ItemName": "1_1_5704751288073786.svg"
                   }
                 }
               },

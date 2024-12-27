@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'4.1 SIG (1).png'"
+                    "Value": "'4_1_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "4.1_SIG_(1)8979744641380369.png"
+                    "ItemName": "4_1_6359040378885388.svg"
                   }
                 }
               },

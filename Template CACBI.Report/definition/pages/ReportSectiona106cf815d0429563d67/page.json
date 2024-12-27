@@ -85,7 +85,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'9.1 Trésorerie - FM.png'"
+                    "Value": "'9_1_.svg'"
                   }
                 }
               },
@@ -94,7 +94,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "9.1_Tr_sorerie_-_FM12057740718694498.png"
+                    "ItemName": "9_1_5800275491873714.svg"
                   }
                 }
               },

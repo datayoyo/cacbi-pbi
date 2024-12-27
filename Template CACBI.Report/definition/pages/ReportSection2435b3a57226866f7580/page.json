@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.6 Qualification  - Bornage dates.png'"
+                    "Value": "'1_6_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.6_Qualification__-_Bornage_d7487800492537078.png"
+                    "ItemName": "1_6_6297459419537588.svg"
                   }
                 }
               },

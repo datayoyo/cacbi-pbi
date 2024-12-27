@@ -122,7 +122,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'6.2 CA.sh (1).png'"
+                    "Value": "'6_2_.svg'"
                   }
                 }
               },
@@ -131,7 +131,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "6.2_CA.sh_(1)6885778771418505.png"
+                    "ItemName": "6_2_2957459806491396.svg"
                   }
                 }
               },

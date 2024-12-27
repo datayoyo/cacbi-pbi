@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.2 Qualification  - Qualité de la donnée.png'"
+                    "Value": "'1_2_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.2_Qualification__-_Qualit__d16809293007384363.png"
+                    "ItemName": "1_2_8124924407694709.svg"
                   }
                 }
               },

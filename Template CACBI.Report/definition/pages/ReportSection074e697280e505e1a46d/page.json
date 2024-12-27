@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.7 Qualification - Comptes PCG.png'"
+                    "Value": "'1_7_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.7_Qualification_-_Comptes_PC19040014357235435.png"
+                    "ItemName": "1_7_19278350811149125.svg"
                   }
                 }
               },

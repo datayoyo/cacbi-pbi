@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.4 Qualification  - Détail date comptable.png'"
+                    "Value": "'1_4_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.4_Qualification__-_D_tail_da23734234945224109.png"
+                    "ItemName": "1_4_6732758054888113.svg"
                   }
                 }
               },

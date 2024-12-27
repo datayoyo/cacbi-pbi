@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.6 Immo - PV cession.png'"
+                    "Value": "'7_6_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.6_Immo_-_PV_cession1646525720066958.png"
+                    "ItemName": "7_6_38852342116663174.svg"
                   }
                 }
               },

@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'1.5 Qualification  - Détail numéro écriture.png'"
+                    "Value": "'1_5_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "1.5_Qualification__-_D_tail_nu1623879739759455.png"
+                    "ItemName": "1_5_004296324563108245.svg"
                   }
                 }
               },

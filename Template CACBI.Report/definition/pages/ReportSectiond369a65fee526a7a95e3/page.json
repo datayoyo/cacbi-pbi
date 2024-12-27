@@ -78,7 +78,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'8.1 Immo fi - FM.png'"
+                    "Value": "'8_1_.svg'"
                   }
                 }
               },
@@ -87,7 +87,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "8.1_Immo_fi_-_FM4874982497586364.png"
+                    "ItemName": "8_1_11193897725785273.svg"
                   }
                 }
               },

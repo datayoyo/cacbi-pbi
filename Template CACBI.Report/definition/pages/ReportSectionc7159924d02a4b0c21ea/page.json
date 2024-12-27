@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'5.1 Qualité de clôture.png'"
+                    "Value": "'5_1_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "5.1_Qualit__de_cl_ture7546785561283023.png"
+                    "ItemName": "5_1_9428204045438469.svg"
                   }
                 }
               },

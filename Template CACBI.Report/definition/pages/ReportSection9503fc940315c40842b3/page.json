@@ -92,7 +92,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.7 Immo. Charges d''entretien.png'"
+                    "Value": "'7_7_.svg'"
                   }
                 }
               },
@@ -101,7 +101,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.7_Immo._Charges_d'entretien11041968154214143.png"
+                    "ItemName": "7_7_03338163445636555.svg"
                   }
                 }
               },

@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'3.1 Cash - TFT.png'"
+                    "Value": "'3_1_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "3.1_Cash_-_TFT8000156992561325.png"
+                    "ItemName": "3_1_7260982757205519.svg"
                   }
                 }
               },

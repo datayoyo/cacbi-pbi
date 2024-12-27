@@ -71,7 +71,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'2.2 Etats fi - PL.png'"
+                    "Value": "'2_2_.svg'"
                   }
                 }
               },
@@ -80,7 +80,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "2.2_Etats_fi_-_PL9684351059645226.png"
+                    "ItemName": "2_2_43062722423132804.svg"
                   }
                 }
               },

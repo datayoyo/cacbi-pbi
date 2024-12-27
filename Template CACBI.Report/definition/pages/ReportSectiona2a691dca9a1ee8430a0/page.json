@@ -71,7 +71,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'3.2 Cash - Evolution tréso.png'"
+                    "Value": "'3_2_.svg'"
                   }
                 }
               },
@@ -80,7 +80,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "3.2_Cash_-_Evolution_tr_so39818060929206944.png"
+                    "ItemName": "3_2_24442629629048662.svg"
                   }
                 }
               },

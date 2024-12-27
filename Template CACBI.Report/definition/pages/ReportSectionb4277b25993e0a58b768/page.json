@@ -106,7 +106,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.1 Immo - FM.png'"
+                    "Value": "'7_1_.svg'"
                   }
                 }
               },
@@ -115,7 +115,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.1_Immo_-_FM6261902537509791.png"
+                    "ItemName": "7_1_9435849548289874.svg"
                   }
                 }
               },

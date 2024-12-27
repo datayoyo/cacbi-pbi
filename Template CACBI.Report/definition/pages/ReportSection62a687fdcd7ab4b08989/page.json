@@ -266,7 +266,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'3.3 Cash - Endettement net.png'"
+                    "Value": "'3_3_.svg'"
                   }
                 }
               },
@@ -275,7 +275,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "3.3_Cash_-_Endettement_net21283315777924616.png"
+                    "ItemName": "3_3_48826833718108253.svg"
                   }
                 }
               },

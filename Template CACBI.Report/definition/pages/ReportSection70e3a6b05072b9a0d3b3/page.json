@@ -280,7 +280,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.5 Immo - Bouclage sorties.png'"
+                    "Value": "'7_5_.svg'"
                   }
                 }
               },
@@ -289,7 +289,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.5_Immo_-_Bouclage_sorties18257937146955872.png"
+                    "ItemName": "7_5_9968898002795068.svg"
                   }
                 }
               },

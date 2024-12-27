@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.3 Immo. - Amort. et dép..png'"
+                    "Value": "'7_3_.svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.3_Immo._-_Amort._et_d_p.6556896743198026.png"
+                    "ItemName": "7_3_5987873573354621.svg"
                   }
                 }
               },

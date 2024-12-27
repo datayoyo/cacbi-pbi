@@ -78,7 +78,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'7.2 Immo. - Brutes.png'"
+                    "Value": "'7_2_.svg'"
                   }
                 }
               },
@@ -87,7 +87,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "7.2_Immo._-_Brutes6734628607218354.png"
+                    "ItemName": "7_2_06949079542103354.svg"
                   }
                 }
               },

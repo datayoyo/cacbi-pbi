@@ -71,7 +71,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'2.1 Etats fi - Bilan.png'"
+                    "Value": "'2_1_.svg'"
                   }
                 }
               },
@@ -80,7 +80,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "2.1_Etats_fi_-_Bilan699608546757245.png"
+                    "ItemName": "2_1_03861509964527987.svg"
                   }
                 }
               },
