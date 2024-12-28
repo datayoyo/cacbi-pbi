@@ -1,0 +1,240 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "233aecf73064ce882165",
+  "displayName": "6.3 Avances et acomptes",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filtera1d92e0801c317a50226",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "SE"
+              }
+            },
+            "Property": "SchemaEcriture"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "SE",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Contains": {
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "s"
+                        }
+                      },
+                      "Property": "SchemaEcriture"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'|4191|'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "Filter1b8fefde029c675d0a92",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "KPI"
+              }
+            },
+            "Property": "Exercice"
+          }
+        },
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "k",
+              "Entity": "KPI",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "k"
+                          }
+                        },
+                        "Property": "Exercice"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'N'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'6_3_.svg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "6_3_27467201102249983.svg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "297L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "4395163cd0086266765b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "3c2a9339227806ad53e5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "bd8278d46a0c40ebd6ed",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "c02afe2015aee5029c3b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "7d162350cb4c411594ad",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "acceb11fb01ae06c4206",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "1f602b87bd16cbed3049",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "a6187c27be1c2c4206ec",
+      "type": "NoFilter"
+    },
+    {
+      "source": "70870bc3d6c22b3d5840",
+      "target": "03980cb3b252c4e00c26",
+      "type": "NoFilter"
+    }
+  ]
+}

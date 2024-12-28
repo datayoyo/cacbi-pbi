@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "ReportSectiona5f3a2864a5715ee642e",
+  "displayName": "7.3 Immo. - Amort. et dép.",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'7_3_.svg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "7_3_5987873573354621.svg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "320L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "02711960574e31669a53",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "02711960574e31669a53",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    },
+    {
+      "source": "02711960574e31669a53",
+      "target": "407f60376d4c80ed1150",
+      "type": "DataFilter"
+    },
+    {
+      "source": "407f60376d4c80ed1150",
+      "target": "02711960574e31669a53",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c678ec929e50c5cb9c06",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c678ec929e50c5cb9c06",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c678ec929e50c5cb9c06",
+      "target": "02711960574e31669a53",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c678ec929e50c5cb9c06",
+      "target": "407f60376d4c80ed1150",
+      "type": "NoFilter"
+    },
+    {
+      "source": "407f60376d4c80ed1150",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "407f60376d4c80ed1150",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1eb90547ee367b7809a9",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1eb90547ee367b7809a9",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    },
+    {
+      "source": "638e57541a8602c870e1",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "638e57541a8602c870e1",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cb0edad1887065475126",
+      "target": "5354f88e29e0b33e928b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cb0edad1887065475126",
+      "target": "cb6e870359757b10c883",
+      "type": "NoFilter"
+    }
+  ]
+}

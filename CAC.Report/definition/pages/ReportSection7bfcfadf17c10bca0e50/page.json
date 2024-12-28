@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "ReportSection7bfcfadf17c10bca0e50",
+  "displayName": "3.1 Cash - TFT",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'3_1_.svg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "3_1_7260982757205519.svg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "pageRefresh": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "57ef5492155c3bd3bec5",
+      "target": "1414b8cf8505cd7a2270",
+      "type": "NoFilter"
+    },
+    {
+      "source": "57ef5492155c3bd3bec5",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "57ef5492155c3bd3bec5",
+      "target": "762e1eb27dd714bb47a5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1414b8cf8505cd7a2270",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d5e05e7028006eec4838",
+      "target": "1414b8cf8505cd7a2270",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d5e05e7028006eec4838",
+      "target": "57ef5492155c3bd3bec5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "57ef5492155c3bd3bec5",
+      "target": "82070001b03805f9de67",
+      "type": "NoFilter"
+    },
+    {
+      "source": "82070001b03805f9de67",
+      "target": "4ee8bbc02824505026ba",
+      "type": "NoFilter"
+    },
+    {
+      "source": "82070001b03805f9de67",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ffc8da2ee0e0b308c0c7",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ac4511052d006e24d09",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "762e1eb27dd714bb47a5",
+      "target": "d5e05e7028006eec4838",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1414b8cf8505cd7a2270",
+      "target": "8ba34dac32d690a9b937",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d5e05e7028006eec4838",
+      "target": "8ba34dac32d690a9b937",
+      "type": "NoFilter"
+    },
+    {
+      "source": "57ef5492155c3bd3bec5",
+      "target": "8ba34dac32d690a9b937",
+      "type": "NoFilter"
+    },
+    {
+      "source": "82070001b03805f9de67",
+      "target": "8ba34dac32d690a9b937",
+      "type": "NoFilter"
+    }
+  ]
+}
