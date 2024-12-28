@@ -278,7 +278,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Comptes - Libellés": {
+			          "Compte comptable": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -288,7 +288,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Compte comptable": {
+			          "Comptes - Libellés": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -902,16 +902,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Reprises": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Diminutions": {
 			            "State": "Suggested",
 			            "Source": {
@@ -945,16 +935,6 @@ cultureInfo en-US
 			        {
 			          "_Gene_Mvt credit n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Dotations": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -4970,16 +4950,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Clients créditeurs": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -23648,16 +23618,6 @@ cultureInfo en-US
 			          "/n - bridge": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Catégorie": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -23874,16 +23834,6 @@ cultureInfo en-US
 			          "c TVAmot.": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          ":": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
