@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSection8b4a19a2ee8f4b3b3616",
-  "displayName": "16.1 Frs / Achats - FM",
+  "displayName": "I",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,

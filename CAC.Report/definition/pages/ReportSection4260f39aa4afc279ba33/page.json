@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSection4260f39aa4afc279ba33",
-  "displayName": "18.2 Impots - Charges",
+  "displayName": "T",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,

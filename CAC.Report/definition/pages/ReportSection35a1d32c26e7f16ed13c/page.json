@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSection35a1d32c26e7f16ed13c",
-  "displayName": "21.1 SE - Chiffre d'affaires",
+  "displayName": "ZF",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,

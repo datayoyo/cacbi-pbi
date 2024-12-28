@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSectiond95b18f744b51571eed2",
-  "displayName": "1.4 Qualification - Date comptable",
+  "displayName": "D",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,

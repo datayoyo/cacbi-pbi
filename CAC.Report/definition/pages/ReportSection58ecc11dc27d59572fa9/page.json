@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSection58ecc11dc27d59572fa9",
-  "displayName": "1.1 Qualification de la donnée",
+  "displayName": "A",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,

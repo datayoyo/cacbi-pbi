@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
   "name": "ReportSection1f151e0800a11a36a6ed",
-  "displayName": "21.2 SE - Achats",
+  "displayName": "ZG",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1380,
