@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "075c74ae34a65e110ec1",
+  "position": {
+    "x": 563.95904436860064,
+    "y": 74.948805460750847,
+    "z": 1000,
+    "height": 23.959044368600683,
+    "width": 20.273037542662117,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Qna'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'La vérification du bornage des dates comptables est un processus qui vise à déterminer, pour chaque exercice comptable, les dates extrêmes enregistrées, à savoir la plus ancienne et la plus récente. Un contrôle est considéré comme conforme lorsque la date la plus ancienne n''est pas antérieure à la date d''ouverture de l''exercice et que la date la plus récente ne dépasse pas la date de clôture de l''exercice. Ainsi, pour un exercice d''une durée de 12 mois se terminant le 31 décembre 2023, la date comptable la plus ancienne ne devrait pas être antérieure au 1er janvier 2023, et la date la plus récente ne devrait pas excéder le 31 décembre 2023. Les inexactitudes dans les dates comptables entraînent une interprétation erronée de la saisonnalité reflétée dans l''ensemble des graphiques qui se fondent sur le champ \"Date comptable\".'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
