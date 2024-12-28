@@ -1877,16 +1877,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "‎": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1954,16 +1944,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "Solde": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Flux": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2826,16 +2806,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "# écritures N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -2867,26 +2837,6 @@ cultureInfo en-US
 			        {
 			          "_Gene_Debit n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Débit N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Débit": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5498,16 +5448,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.452
 			          }
-			        },
-			        {
-			          "Jour férié": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -5570,16 +5510,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "Jour de la semaine": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6123,16 +6053,6 @@ cultureInfo en-US
 			        {
 			          "_Gene_Solde cumulé": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Solde cumulé": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -15998,16 +15918,6 @@ cultureInfo en-US
 			          "SAP4_Bilan inv n": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Solde N - Bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -19981,16 +19891,6 @@ cultureInfo en-US
 			          "TOD2 solde P&L n": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Solde N - P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -20151,16 +20051,6 @@ cultureInfo en-US
 			        {
 			          "TOD3 solde bilan n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Solde N - Bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -26753,16 +26643,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "‎": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -27689,16 +27569,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Catégories de flux": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -28301,26 +28171,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "Schéma écriture | Compte comptable": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Schéma d'écriture | N° écriture": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Schéma écriture | N° écriture": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -30586,16 +30436,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Chiffre d'affaires N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -30611,16 +30451,6 @@ cultureInfo en-US
 			        {
 			          "_Gene_Credit n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Crédit N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -30644,16 +30474,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Solde achats N": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
