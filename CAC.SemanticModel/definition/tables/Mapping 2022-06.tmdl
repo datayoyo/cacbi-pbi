@@ -97,7 +97,7 @@ table 'Mapping 2022-06'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\hajar\OneDrive - DataYoyo\Réseau partagé DY\06. CAC BI - développement\05. Dèv nouvelles fonctionnalités\23. Règlement 06-2022\Table de passage PCG 2022-06.xlsx"), null, true),
+				    Source = Excel.Workbook(Web.Contents("https://datayoyo.sharepoint.com/sites/DataYoyo/Shared%20Documents/General/Table%20de%20passage%20PCG%202022-06.xlsx"), null, true),
 				    #"Mapping 2022-06_Sheet" = Source{[Item="Mapping 2022-06",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(#"Mapping 2022-06_Sheet", [PromoteAllScalars=true]),
 				    #"Removed Other Columns" = Table.SelectColumns(#"Promoted Headers",{"Racine3", "Racine4", "Racine5", "Racine3 OLD", "Racine3 NEW", "Racine4 OLD", "Racine4 NEW", "Racine5 OLD", "Racine5 NEW", "Commentaires", "Detail"}),
@@ -105,7 +105,7 @@ table 'Mapping 2022-06'
 				in
 				    #"Changed Type"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
 	annotation PBI_NavigationStepName = Navigation
 
