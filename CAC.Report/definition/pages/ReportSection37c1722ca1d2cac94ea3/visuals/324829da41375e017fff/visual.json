@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "324829da41375e017fff",
+  "position": {
+    "x": 728.98305084745766,
+    "y": 278.07909604519773,
+    "z": 29000,
+    "height": 33.135593220338983,
+    "width": 39.632768361581924,
+    "tabOrder": 29000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "Blank_tooltip"
+                }
+              },
+              "queryRef": "KPI.Blank_tooltip",
+              "nativeQueryRef": "Blank_tooltip"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'005d88a617a3b77a509d'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
