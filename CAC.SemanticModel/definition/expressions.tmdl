@@ -27,10 +27,10 @@ expression 'Ranking CS' =
 
 	annotation PBI_ResultType = Table
 
-expression ClientID = 30 meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+expression ClientID = "null" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
 	lineageTag: 20f62ffd-dd47-4173-a440-3d940c48e414
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Number
+	annotation PBI_ResultType = Text
 
