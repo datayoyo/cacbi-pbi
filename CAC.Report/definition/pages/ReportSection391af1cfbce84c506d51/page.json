@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "ReportSection391af1cfbce84c506d51",
+  "displayName": "11.6 Clients - Balance agée",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "a2d6d48cd01bb0ebb0b9",
+      "target": "9f05922bb7092e4160c8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a2d6d48cd01bb0ebb0b9",
+      "target": "dec252310270ebac8ca8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a2d6d48cd01bb0ebb0b9",
+      "target": "03f996eb8aac7d02b320",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dec252310270ebac8ca8",
+      "target": "03f996eb8aac7d02b320",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9e58147815f96a2ffccb",
+      "target": "03f996eb8aac7d02b320",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a2d6d48cd01bb0ebb0b9",
+      "target": "c22d350a9dc06bb306c7",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a2d6d48cd01bb0ebb0b9",
+      "target": "45c455b058d4cec6c600",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dec252310270ebac8ca8",
+      "target": "c22d350a9dc06bb306c7",
+      "type": "NoFilter"
+    }
+  ]
+}

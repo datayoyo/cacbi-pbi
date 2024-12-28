@@ -1,0 +1,1096 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "3fbefa69462b354a42b2",
+  "position": {
+    "x": 259.1740412979351,
+    "y": 132.97935103244839,
+    "z": 0,
+    "height": 553.62831858407083,
+    "width": 1076.0471976401182,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PlanCompteAEF"
+                    }
+                  },
+                  "Property": "LiasseLibelleAffichage"
+                }
+              },
+              "queryRef": "PlanCompteAEF.LiasseLibelleAffichage",
+              "nativeQueryRef": "Libellé de liasse",
+              "displayName": "Libellé de liasse"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "CompteName"
+                }
+              },
+              "queryRef": "KPI.CompteName",
+              "displayName": "Comptes - Libellés"
+            }
+          ],
+          "showAll": true
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_bruts_N"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_bruts",
+              "nativeQueryRef": "VB - N",
+              "displayName": "VB - N"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_bruts_N-1"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_bruts_N-1",
+              "nativeQueryRef": "VB - N-1",
+              "displayName": "VB - N-1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "Blank_1"
+                }
+              },
+              "queryRef": "KPI.Blank_1",
+              "nativeQueryRef": "Variation",
+              "displayName": "Variation"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "Blank_2"
+                }
+              },
+              "queryRef": "KPI.Blank_2",
+              "nativeQueryRef": "‎  ",
+              "displayName": "‎  "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_dépré_N-1"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_dépré_N-1",
+              "nativeQueryRef": "Dépré. N-1",
+              "displayName": "Dépré. N-1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_dot_N"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_dot_N",
+              "nativeQueryRef": "Dotations",
+              "displayName": "Dotations"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_rep_N"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_rep_N",
+              "nativeQueryRef": "Reprises",
+              "displayName": "Reprises"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "TBC_Stocks_dépré_N"
+                }
+              },
+              "queryRef": "KPI.TBC_Stocks_dépré_N",
+              "nativeQueryRef": "Dépré. N",
+              "displayName": "Dépré. N"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "Blank_3"
+                }
+              },
+              "queryRef": "KPI.Blank_3",
+              "nativeQueryRef": "‎ ‎ ",
+              "displayName": "‎ ‎ "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "KPI"
+                    }
+                  },
+                  "Property": "Blank_4"
+                }
+              },
+              "queryRef": "KPI.Blank_4",
+              "nativeQueryRef": "VNC - N",
+              "displayName": "VNC - N"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "PlanCompteAEF"
+                  }
+                },
+                "Property": "LiasseLibelleAffichage"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            },
+            "backgroundColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "4L"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "thousandSeparator": {
+              "expr": {
+                "Literal": {
+                  "Value": "' '"
+                }
+              }
+            },
+            "zeroValueFormatting": {
+              "expr": {
+                "Literal": {
+                  "Value": "'empty'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "315D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "PlanCompteAEF.LiasseLibelleAffichage"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_bruts"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_bruts_N-1"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.Blank_1"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "backgroundColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.Blank_2"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_dépré_N-1"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_dot_N"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_rep_N"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.TBC_Stocks_dépré_N"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "backgroundColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.Blank_3"
+          }
+        },
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "KPI.Blank_4"
+          }
+        },
+        {
+          "properties": {
+            "firstColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "315D"
+                }
+              }
+            },
+            "metadataColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "315D"
+                }
+              }
+            },
+            "prevFirstColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "150D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualFlags": [
+        {
+          "properties": {
+            "rowIdGenMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnExpansion": [
+        {
+          "properties": {
+            "expansionState": {
+              "expr": {
+                "Literal": {
+                  "Value": "'[]'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "eaze": [
+        {
+          "properties": {
+            "calculations": {
+              "expr": {
+                "Literal": {
+                  "Value": "'[{\"relativeToCompositeRowId\":\"_Dépréc__Matières_premières__approv__0\",\"command\":\"AddRow\",\"calcId\":\"1714566712603\",\"placement\":\"After\",\"rowId\":\"L1714566712603\",\"displayName\":\"▶️ Matières premières, approv. - STOCK NET\",\"style\":\"stylesKPI\",\"compositeId\":\"L1714566712603\",\"formula\":\"_Matières_premières__approv__0+_Dépréc__Matières_premières__approv__0\"},{\"relativeToCompositeRowId\":\"_Dép_En_cours_prod__biens_0\",\"command\":\"AddRow\",\"calcId\":\"1714566795607\",\"placement\":\"After\",\"rowId\":\"L1714566795607\",\"displayName\":\"▶️ En cours prod. biens - STOCK NET\",\"style\":\"stylesKPI\",\"compositeId\":\"L1714566795607\",\"formula\":\"_En_cours_prod__biens_0+_Dép_En_cours_prod__biens_0\"},{\"relativeToCompositeRowId\":\"_Dép_En_cours_prod__services_0\",\"command\":\"AddRow\",\"calcId\":\"1714566823701\",\"placement\":\"After\",\"rowId\":\"L1714566823701\",\"displayName\":\"▶️ En cours prod. services - STOCK NET\",\"formula\":\"_En_cours_prod__services_0+_Dép_En_cours_prod__services_0\",\"style\":\"stylesKPI\",\"compositeId\":\"L1714566823701\"},{\"relativeToCompositeRowId\":\"_Dép_Produits_intermédiaires_et_finis_0\",\"command\":\"AddRow\",\"calcId\":\"1714566924243\",\"placement\":\"After\",\"rowId\":\"L1714566924243\",\"displayName\":\"▶️ Produits intermédiaires et finis - STOCK NET\",\"formula\":\"_Produits_intermédiaires_et_finis_0+_Dép_Produits_intermédiaires_et_finis_0\",\"style\":\"stylesKPI\",\"compositeId\":\"L1714566924243\"},{\"relativeToCompositeRowId\":\"_Dép_Marchandises_0\",\"command\":\"AddRow\",\"calcId\":\"1714566954044\",\"placement\":\"After\",\"rowId\":\"L1714566954044\",\"displayName\":\"▶️ Marchandises - STOCK NET\",\"formula\":\"_Marchandises_0+_Dép_Marchandises_0\",\"style\":\"stylesKPI\",\"compositeId\":\"L1714566954044\"},{\"command\":\"UpdateAllRowsStyle\",\"calcId\":\"1714567167167\",\"rule\":\">\",\"style\":\"stylesSubtotal\",\"formula\":\"RowLevel()==0\"},{\"command\":\"UpdateAllRowsStyle\",\"calcId\":\"1714567204404\",\"rule\":\">\",\"style\":\"custom3\",\"formula\":\"RowLevel()==1\"},{\"command\":\"ColumnFormula\",\"calcId\":\"1714568176315\",\"formula\":\"CH_VB324532N_CKPI46TBC_Stocks_bruts-CH_VB324532N451_CKPI46TBC_Stocks_bruts_N451\",\"columnId\":\"CKPI46Blank_1_0\",\"columnSelector\":\"CH_Blank_1_CKPI46Blank_1\",\"displayName\":\"Blank_1\",\"header\":\"Blank_1\"},{\"command\":\"ColumnFormula\",\"calcId\":\"1714569166051\",\"formula\":\"‎ \",\"columnId\":\"CKPI46Blank_2_0\",\"columnSelector\":\"CH_82063232_CKPI46Blank_2\",\"displayName\":\"‎  \",\"header\":\"‎  \"},{\"command\":\"ColumnFormula\",\"calcId\":\"1714569300783\",\"formula\":\"‎ \",\"columnId\":\"CKPI46Blank_3_0\",\"columnSelector\":\"CH_820632820632_CKPI46Blank_3\",\"displayName\":\"‎ ‎ \",\"header\":\"‎ ‎ \"},{\"command\":\"ColumnFormula\",\"calcId\":\"1714569327053\",\"formula\":\"CH_VB324532N_CKPI46TBC_Stocks_bruts+CH_D233pr2334632N_CKPI46TBC_Stocks_d233pr233_N\",\"columnId\":\"CKPI46Blank_4_0\",\"columnSelector\":\"CH_VNC324532N_CKPI46Blank_4\",\"displayName\":\"VNC - N\",\"header\":\"VNC - N\"},{\"relativeToCompositeRowId\":\"L1714566954044\",\"command\":\"AddRow\",\"calcId\":\"1714569464467\",\"placement\":\"After\",\"rowId\":\"L1714569464467\",\"displayName\":\"TOTAL\",\"style\":\"stylesSubtotal\",\"compositeId\":\"L1714569464467\",\"formula\":\"L1714566712603+L1714566795607+L1714566823701+L1714566924243+L1714566954044\"}]'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylesKPI": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontStyleItalic": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylesSubtotal": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outline": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top bottom'"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowExpansion": [
+        {
+          "properties": {
+            "expansionState": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "raggedHierarchy": [
+        {
+          "properties": {
+            "collapsedRowsState": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylesCustom3": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylesCustom1": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylesCustom2": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "7.5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Compte de résultat'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font_light, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FCFCFC'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "showFilterRestatementButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter8ed21f3613215d6a1060",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "PlanCompteAEF"
+              }
+            },
+            "Property": "DetailNiv3"
+          }
+        },
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "PlanCompteAEF",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "p"
+                          }
+                        },
+                        "Property": "DetailNiv3"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Stocks'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  }
+}

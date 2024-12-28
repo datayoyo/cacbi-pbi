@@ -71,23 +71,14 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'3_2_.svg'"
+                    "Value": "''"
                   }
                 }
               },
               "url": {
                 "expr": {
-                  "ResourcePackageItem": {
-                    "PackageName": "RegisteredResources",
-                    "PackageType": 1,
-                    "ItemName": "3_2_24442629629048662.svg"
-                  }
-                }
-              },
-              "scaling": {
-                "expr": {
                   "Literal": {
-                    "Value": "'Fit'"
+                    "Value": "''"
                   }
                 }
               }

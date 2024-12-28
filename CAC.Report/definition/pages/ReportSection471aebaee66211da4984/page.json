@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "ReportSection471aebaee66211da4984",
+  "displayName": "16.4 Frs - Dettes et débiteurs",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1380,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "409483845432136c434a",
+      "target": "2318be119a10c3656084",
+      "type": "NoFilter"
+    },
+    {
+      "source": "90db9578d3d19ac09d83",
+      "target": "409483845432136c434a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "90db9578d3d19ac09d83",
+      "target": "2318be119a10c3656084",
+      "type": "NoFilter"
+    },
+    {
+      "source": "90db9578d3d19ac09d83",
+      "target": "1043bccce2da5c40a3c0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1043bccce2da5c40a3c0",
+      "target": "409483845432136c434a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1043bccce2da5c40a3c0",
+      "target": "2318be119a10c3656084",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1043bccce2da5c40a3c0",
+      "target": "eaada151e00303426db5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9f5531189dedd720cbc0",
+      "target": "2318be119a10c3656084",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9f5531189dedd720cbc0",
+      "target": "eaada151e00303426db5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e4a76b5fb97c20b60841",
+      "target": "eaada151e00303426db5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e4a76b5fb97c20b60841",
+      "target": "2318be119a10c3656084",
+      "type": "NoFilter"
+    },
+    {
+      "source": "90db9578d3d19ac09d83",
+      "target": "eaada151e00303426db5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "409483845432136c434a",
+      "target": "eaada151e00303426db5",
+      "type": "NoFilter"
+    }
+  ]
+}
