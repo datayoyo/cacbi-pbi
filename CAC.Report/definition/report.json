@@ -112,10 +112,6 @@
       }
     ]
   },
-  "publicCustomVisuals": [
-    "textFilter25A4896A83E0487089E2B90C9AE57C8A",
-    "financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E"
-  ],
   "resourcePackages": [
     {
       "name": "RegisteredResources",
