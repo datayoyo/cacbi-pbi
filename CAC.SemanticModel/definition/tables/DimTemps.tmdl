@@ -437,9 +437,10 @@ table DimTemps
 				let
 				    Source = PostgreSQL.Database("datayoyo.fr:19128", "Cacbi", [HierarchicalNavigation=true]),
 				    public = Source{[Schema="public"]}[Data],
-				    DimTemps1 = public{[Name="DimTemps"]}[Data]
+				    DimTemps1 = public{[Name="DimTemps"]}[Data],
+				    #"Filtered Rows" = Table.SelectRows(DimTemps1, each [FirstFiscalMonth] = 1)
 				in
-				    DimTemps1
+				    #"Filtered Rows"
 
 	changedProperty = IsHidden
 
