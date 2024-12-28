@@ -296,26 +296,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Comptes comptabes": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "‎": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1234,16 +1214,6 @@ cultureInfo en-US
 			          "_Immo_Dot amort n": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Dot. amort.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1259,16 +1229,6 @@ cultureInfo en-US
 			        {
 			          "_Immo_Rep amort n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Rep. amort.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1286,16 +1246,6 @@ cultureInfo en-US
 			          "_Immo_Dot depre n": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Dot. dépré.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1311,16 +1261,6 @@ cultureInfo en-US
 			        {
 			          "_Immo_Rep depre n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Rep. dépré.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1468,16 +1408,6 @@ cultureInfo en-US
 			          "_Immo_P CEAC": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Produits des cessions d'éléments d'actif (hors #7756)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1493,16 +1423,6 @@ cultureInfo en-US
 			        {
 			          "_Immo_PV cession": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Plus-value de cession d'immobilisations": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2049,7 +1969,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "‎": {
+			          "Taux de TVA (à saisir)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2059,7 +1979,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Taux de TVA (à saisir)": {
+			          "‎": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4504,26 +4424,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.494
 			          }
-			        },
-			        {
-			          "Var. Bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Variation des amortissements au bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -4639,16 +4539,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "Écart": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4766,26 +4656,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.489
 			          }
-			        },
-			        {
-			          "Solde - P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Montant des amortissements au P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -4901,26 +4771,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.489
-			          }
-			        },
-			        {
-			          "VNC - Bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VNC des immobilisations sorties - Bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5038,36 +4888,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.489
 			          }
-			        },
-			        {
-			          "VNC - P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VNC des immobilisations sorties - P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VNC des immo. sorties": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -5183,16 +5003,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.489
-			          }
-			        },
-			        {
-			          "Écart": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6926,16 +6736,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Transferts": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -7039,16 +6839,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.461
 			          }
-			        },
-			        {
-			          "Acquisitions": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -7071,16 +6861,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Cessions": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -7801,16 +7581,6 @@ cultureInfo en-US
 			        {
 			          "_immo_ taux amort P&L global n": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          ".": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14340,16 +14110,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "VNC des immobilisations sorties - P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "VNC des immobilisations sorties - Bilan (hors #6756)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -24887,16 +24647,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Catégorie": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          ":": {
 			            "State": "Suggested",
 			            "Source": {
@@ -24938,16 +24688,6 @@ cultureInfo en-US
 			          "c tvi": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          ":": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -33458,16 +33198,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.489
 			          }
-			        },
-			        {
-			          "Produits de cession": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -33583,16 +33313,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.489
-			          }
-			        },
-			        {
-			          "Plus-value de cession": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -34349,16 +34069,6 @@ cultureInfo en-US
 			          "_Immo_fi_Depre bilan HorsAN": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Variation des dépréciations au bilan": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34391,16 +34101,6 @@ cultureInfo en-US
 			          "_Immo_fi_Depre bouclage ecart": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Écart": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34417,16 +34117,6 @@ cultureInfo en-US
 			          "_Immo_fi_Dot P&L": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Dotations P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34442,16 +34132,6 @@ cultureInfo en-US
 			        {
 			          "_Immo_fi_Rep P&L": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Reprises P&L": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -35047,16 +34727,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "Nature des contreparties": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
